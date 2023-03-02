@@ -1,0 +1,17 @@
+$gray: #333
+$b: #9FD9F6
+$ff: "Noto Sans TC" !important
+
+@mixin classicHover
+  cursor: pointer
+  background-color: rgba(159,217,246,0)
+  border:
+    style: solid
+    width: 1px
+    color: rgba(159,217,246,1)!important
+  &:hover
+    background-color: rgba(159,217,246,.5)
+    border-color:  rgba(159,217,246,0)
+
+%textShadow
+  text-shadow: 0 0 0.55em rgba(0,0,0,.5), 0 0 0.2em rgba(0,0,0,.8)
