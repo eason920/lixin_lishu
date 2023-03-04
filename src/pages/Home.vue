@@ -157,6 +157,8 @@ export default {
   letter-spacing: 1px
   // Noto Sans CJK TC  粗細Regular 400
   // Noto Serif CJK TC  粗細Regular 400  Bold 700
+body, html
+  background-color: #004A77
 section
   // overflow: visible
   position: relative
