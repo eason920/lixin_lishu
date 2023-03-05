@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <section id="sec2">
-      <ball />
+      <ball class="ball" />
       <!-- PC -->
       <div class="share_box is_pc" v-if="!isMobile">
         <!-- <video autoplay loop muted>
@@ -28,9 +28,9 @@
           <source src="https://h35.banner.tw/lishu/123.mp4">
         </video> -->
         <div class="logo_mb"
-          data-aos-once="false" 
-          data-aos="fade-up" 
-          data-aos-delay="0" 
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
           data-aos-duration="2000"
         >
           <img src="./S1/logo_mb.png" />
@@ -43,7 +43,6 @@
 <style lang="sass" scoped>
 @import "src/assets/style/myvar"
 @import ./sass/share
-
 
 .share_box
   position: relative
@@ -107,13 +106,20 @@ video
       img
         width: 100%
 
+// ====================================
+// == BALL
+// ====================================
+.ball
+  width: 30px
+  height: 30px
+
 </style>
 
 <script>
 // @ is an alias to /src
 import { isMobile, isTablet } from '@/utils'
 import $ from 'jquery'
-import ball from "./ball.vue";
+import ball from './ball.vue'
 export default {
   name: 'section1',
   components: {

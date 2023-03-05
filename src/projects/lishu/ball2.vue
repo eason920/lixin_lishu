@@ -19,7 +19,7 @@
   height: 100%
   width: 100%
   transform: translateY(-5px)
-  animation: aniWave 3s infinite forwards
+  animation: aniWave 5s infinite forwards
   img
     width: 100%
 </style>

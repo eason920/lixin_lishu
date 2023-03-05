@@ -27,9 +27,9 @@
           <!-- <source src="https://h35.banner.tw/lishu/123.mp4"> -->
         </video>
         <div class="logo_mb"
-          data-aos-once="false" 
-          data-aos="fade-up" 
-          data-aos-delay="0" 
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
           data-aos-duration="2000"
         >
           <img src="./S1/logo_mb.png" />

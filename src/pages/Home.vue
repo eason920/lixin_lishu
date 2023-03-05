@@ -13,15 +13,19 @@
     <!-- <vue-lazy-component class="section" id="sectionDe" @init="init">
       <SwiperDemo />
     </vue-lazy-component> -->
+    <div class="sbg">
+      <img class="is_mb" src="../projects/lishu/all/sbg_mb.png" />
+      <img class="is_pc" src="../projects/lishu/all/sbg_pc.png" />
+    </div>
     <vue-lazy-component class="section" id="section1" @init="init">
       <S1 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section2" @init="init">
       <S2 />
     </vue-lazy-component>
-    <vue-lazy-component class="section" id="section0" @init="init">
+    <!-- <vue-lazy-component class="section" id="section0" @init="init">
       <S0 />
-    </vue-lazy-component>
+    </vue-lazy-component> -->
     <vue-lazy-component class="section" id="section3" @init="init">
       <S3 />
     </vue-lazy-component>
@@ -39,6 +43,9 @@
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section8" @init="init">
       <S8 />
+    </vue-lazy-component>
+    <vue-lazy-component class="section" id="section9" @init="init">
+      <S9 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="contact">
       <ContactSection />
@@ -69,6 +76,7 @@ import S5 from '@/projects/lishu/S5.vue'
 import S6 from '@/projects/lishu/S6.vue'
 import S7 from '@/projects/lishu/S7.vue'
 import S8 from '@/projects/lishu/S8.vue'
+import S9 from '@/projects/lishu/S9.vue'
 
 export default {
   name: 'home',
@@ -90,6 +98,7 @@ export default {
     S6,
     S7,
     S8,
+    S9
   },
 
   data() {
@@ -97,17 +106,6 @@ export default {
       isMobile,
       isSide: false,
       load: true,
-      pcTop1: '',
-      pcTop2: '',
-      pcTop3: '',
-      pcTop4: '',
-      //
-      mbTop1: '',
-      mbTop2: '',
-      mbTop3: '',
-      mbTop4: '',
-      mbTop5: '',
-      mbTop6: '',
     }
   },
   created() {
@@ -162,11 +160,24 @@ body, html
 section
   // overflow: visible
   position: relative
+.sbg
+  width: 100vw
+  position: fixed
+  img
+    width: 100%
 
 @media screen and (min-width: $bp-pc)
+  .sbg
+    height: 100vh
+    display: flex
+    align-items: flex-end
+    .is_mb
+      display: none
 
 @media screen and (max-width: $bp-mb)
-
+  .sbg
+    .is_pc
+      display: none
 </style>
 
 <style lang="scss">

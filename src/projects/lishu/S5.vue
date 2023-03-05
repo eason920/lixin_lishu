@@ -1,236 +1,165 @@
 <template>
   <div class="relative">
     <section id="sec5">
-      <div class="box_pic">
-        <div class="pic1"
+      <div class="box"
+        data-aos-once="false"
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-duration="800"
+      >
+        <div class="pre" @click="prevBtn"></div>
+        <div class="nxt" @click="nextBtn"></div>
+        <swiper v-if="isMobile" :options="swiperOption" ref="swiper5">
+          <swiper-slide v-for="(item, i) in list" :key="'s5' + i + item">
+            <div class="gradient"></div>
+            <div class="msg">{{ item }}</div>
+          </swiper-slide>
+        </swiper>
+        <img v-else src="./S5/1.png" />
+      </div>
+      <div class="text">
+        <h2
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >
-          <img src="./S5/1.jpg" />
-          <span class="pic_text">合成參考示意圖</span>
-        </div>
-        <div class="pic2">
-          <div
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="800"
-          ><img src="./S5/2.jpg" />
-           <span class="pic_text">校園第一排</span></div>
-          <div
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="800"
-          ><img src="./S5/3.jpg" />
-           <span class="pic_text">福星公園</span></div>
-          <div
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="800"
-          ><img src="./S5/4.jpg" />
-          <span class="pic_text">文林國小</span></div>
-          <div
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="800"
-          ><img src="./S5/5.jpg" />
-           <span class="pic_text">公園第一境</span></div>
-        </div>
-      </div>
-      <div class="box_text">
-        <div class="title"
+        >國際級的創作 頂尖交會合演的新局</h2>
+        <p
           data-aos-once="false"
-          data-aos="fade-in"
+          data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >
-          <img src="./S5/title.png" />
-        </div>
-        <div class="text">
-          <!-- 1 -->
-          <h2
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="0"
-            data-aos-duration="800"
-          >14%純住宅用地<br/>新富人特區 更勝大直重劃區</h2>
-          <p
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="0"
-            data-aos-duration="800"
-            v-if="isMobile"
-          >29坪，跨界3房卓越尺度，住大，何必買大；31坪，享受校園首排綠意，與豪宅平起平坐；37坪，邊間雙衛3房，大面寬採光舒適宜居；46坪，寧靜視野兼得，景觀豪宅無須坪數大。戶戶挑高3米5夢幻逸品，內斂鋒芒，靜謐安逸的名宅氣韻，構築未來科技聚落的高質感生活模式。</p>
-          <p
-            v-else
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="0"
-            data-aos-duration="800"
-          >北士科全區面積約94.38公頃，純住宅區卻僅占不到14％比例，珍稀價值不言而喻，交通、醫療、教育、休閒等機能完備，將是大北區最有質感的新富人名宅聚落。</p>
-          <!-- 2 -->
-          <h2
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="800"
-          >北士科正核心 靜謐街廓角地</h2>
-          <p
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="800"
-            v-if="isMobile"
-          >「宏普陽明」定址北士科正核心位置，純住宅新富人特區核心中的核心聚落，在車水馬龍的承德路、文林北路轉個彎，邂逅北科路上一處靜謐世外，珍稀難得的定靜街廓、完美角地。</p>
-          <p
-            v-else
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="800"
-          >「宏普陽明」定址北士科正核心位置，純住宅新富人特區核心中的核心聚落，在車水馬龍的承德路、文林北路轉個彎，邂逅北科路上一處靜謐世外，珍稀難得的定靜街廓、完美角地。</p>
-          <!-- 3 -->
-          <h2
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="800"
-          >校園第一排 公園第一境 雙園正軸心</h2>
-          <p
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="800"
-          >「宏普陽明」近千坪基地，面對文林國小校園第一排，散步69米到北士科最大廣達3.29公頃的福星公園，雙享北士科正核心與雙園正軸心，<br
-            v-if="isMobile" />悠然大隱寧境。</p>
-        </div>
+        >一棟好的建築，需要在美學的格調上做到昇華改變，<br/>
+        一棟好的住居，需要在空間的意識上達到泰然優雅，<br/>
+        一個好的未來，需要在生活的精神上感到奢華榮耀，<br/>
+        「茂德機構」以國際級的創作高標，在大都會公園水岸第一排，交會出建築未來新局，用心斟酌水岸天際方寸之間的細節，讓山川水綠風景，成為每一個窗景的完美主角！</p>
+        <!-- 2 -->
+        <h2
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >新美齊物業 星級頂奢服務</h2>
+        <p
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >引進新美齊物業社區總體營造，透過一年52週的活動策畫，強化對社區的認同與情感，更在中秋節、聖誕節等，舉辦精彩的慶祝活動，加上對社區生活大小事的專業諮詢與問題排除，讓建築的價值，因生活的品質而歷久彌新，一代帶著下一代的賓至如歸，成為買得起的奢侈品！</p>
       </div>
     </section>
   </div>
 </template>
 
+<script>
+import $ from 'jquery'
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
+
+import { isMobile, isTablet } from '@/utils'
+
+export default {
+  name: 'swiper-example-thumbs-gallery',
+  title: 's5',
+  components: {
+    Swiper,
+    SwiperSlide
+  },
+
+  data() {
+    return {
+      list: [
+        '新美齊物業',
+        '物業情境示意圖',
+        '物業情境示意圖',
+        // some
+      ],
+      vm: this,
+      isMobile,
+      isTablet,
+      swiperOption: {
+        loop: true,
+        breakpoints: {
+          768: {
+            spaceBetween: 10
+          },
+          0: {
+            slidesPerView: 1.16,
+            spaceBetween: 14
+          }
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false
+        },
+        speed: 800,
+        on: {
+          slideChangeTransitionStart: function() {
+            // let eq = this.activeIndex
+            // if (!isMobile) {
+            //   if (eq >= 2) {
+            //     eq = eq - 2
+            //   }
+            //   console.log('eq is ', eq)
+            //   $('.dot5 li')
+            //     .removeClass('active')
+            //     .eq(eq)
+            //     .addClass('active')
+            // } else {
+            //   if (eq >= 4) {
+            //     eq = eq - 4
+            //   }
+            //   console.log('eq is ', eq)
+            //   $('.dot5 li')
+            //     .removeClass('active')
+            //     .eq(eq)
+            //     .addClass('active')
+            // }
+          }
+        }
+      }
+    }
+  },
+
+  methods: {
+    prevBtn() {
+      this.$refs.swiper5.$swiper.slidePrev()
+    },
+    nextBtn() {
+      this.$refs.swiper5.$swiper.slideNext()
+    },
+    fnDotChange(i) {
+      let eq = i - 1
+      if (eq >= 2) {
+        eq = eq - 2
+      }
+      this.$refs.swiper5.$swiper.slideTo(eq)
+    }
+  },
+
+  created() {},
+
+  mounted() {},
+
+  computed: {}
+}
+</script>
+
 <style lang="sass" scoped>
 @import "src/assets/style/myvar"
 @import ./sass/share
-
-@media screen and (min-width: $bp-pc)
-
-@media screen and (max-width: $bp-mb)
-// --------------------------------
-// -- all
-// --------------------------------
-#sec5
+// ====================================
+// == TEXT
+// ====================================
+.text
   width: 80vw
   margin: 0 auto
-  display: flex
-  flex-direction: column
-@media screen and (min-width: $bp-pc)
-  #sec5
-    padding-bottom: 10vw
-    .box_pic
-      order: 2
-@media screen and (max-width: $bp-mb)
-  #sec5
-    padding: 13vw 0
-
-// --------------------------------
-// -- pic
-// --------------------------------
-$g: 15px
-.box_pic
-  display: flex
-  img
-    width: 100%
-    height: 100%
-.pic1
-  position: relative
-  .pic_text
-    left: 1.5vw
-    top: 1vw
-
-.pic2
-  display: flex
-  flex-wrap: wrap
-  div
-    position: relative
-    font-size: 0
-    width: calc(50% - #{$g}/2)
-    &:nth-child(1), &:nth-child(2)
-      margin-bottom: $g
-    &:nth-child(2), &:nth-child(4)
-      margin-left: $g
-  .pic_text
-    background: rgba(0,0,0,.5)
-    width: 100%
-    bottom: 0
-
-.pic_text
-  font:
-    size: calc(12 * 100vw / 375)
-    family: "Noto Sans TC" !important
-  position: absolute
-  color: #fff
-  display: flex
-  align-items: center
-  justify-content: center
-
-@media screen and (min-width: $bp-pc)
-  .box_pic
-
-  .pic1
-    width: 50%
-    margin-right: $g
-  .pic2
-    width: 50%
-  .pic_text
-    height: 36px
-    font:
-     size: calc(16 * 100vw / 1920)
-
-@media screen and (max-width: $bp-mb)
-  .box_pic
-    flex-direction: column
-  .pic1
-    margin-bottom: $g
-  .pic2
-  .pic_text
-    height: 22px
-
-// --------------------------------
-// --title
-// --------------------------------
-.title
-  margin: 0 auto
-  img
-    width: 100%
-  .pic_text
-    height: 22px
-
-@media screen and (min-width: $bp-pc)
-  .title
-    width: 28vw
-    margin-top: 3vw
-@media screen and (max-width: $bp-mb)
-  .title
-    width: 54vw
-    margin:
-      top: 7vw
-      bottom: 5vw
-
-// --------------------------------
-// -- text
-// --------------------------------
-.text
   color: #fff
   line-height: 1.5
   font:
     size: calc(12 * 100vw / 375)
   h2
+    color: $yellow
     font:
       size: 1.25em
       weight: 600
@@ -243,73 +172,222 @@ $g: 15px
   .text
     position: relative
     display: flex
-    flex-wrap: wrap
-    margin: 3vw 0
+    flex-direction: column
+    justify-content: center
+    line-height: 1.7
     font:
       size: calc(20 * 100vw / 1920)
-    &:after
-      content: ""
-      height: 100%
-      left: 50%
-      top: 0
-      width: 1px
-      background: #fff
-      position: absolute
     p, h2
-      width: 50%
-      margin-bottom: 3vw
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      // margin-bottom: 3vw
     & > *
       &:nth-child(1), &:nth-child(2)
-        margin-top: 5vw
+        // margin-top: 5vw
       &:nth-child(5), &:nth-child(6)
         margin-bottom: 5vw
     h2
       text-align: right
-      padding-right: $g
       font:
-       size: 1.63em
+        size: 1.63em
       line-height:1.4
-
+      margin-bottom: .5vw
     p
-      padding-left: $g
+      padding:
+        bottom: 2vw
       text-align: justify
-      line-height:2
       letter-spacing: 0vw
-      font:
-          size: 1vw
-          weight: 300
 
 @media screen and (max-width: $bp-mb)
   .text
+    margin-top: 7vw
+    h2
+      line-height: 1.5
     p
-      margin: 4vw 0 14vw
+      font-size: 3.2vw
+      margin: 4vw 0 10vw
+      &:last-child
+        margin:
+          bottom: 20vw
+
+// ====================================
+// == SWIPER v
+// ====================================
+
+// 圖片
+.swiper-slide
+  background:
+    position: 0 0
+    size: contain
+  position: relative
 
 @media screen and (min-width: $bp-pc)
+  // .swiper-slide
+  //   background-repeat: no-repeat
+  //   &:nth-child(1), &:nth-child(3), &:nth-child(5)
+  //     background-image: url('./S4/1.jpg')
+
+  //   &:nth-child(2), &:nth-child(4), &:nth-child(6)
+  //     background-image: url('./S4/2.jpg')
+@media screen and (max-width: $bp-mb)
+  .swiper-slide
+    background-repeat: no-repeat
+    &:nth-child(1), &:nth-child(4), &:nth-child(7)
+      background-image: url('./S5/m1.png')
+
+    &:nth-child(2), &:nth-child(5), &:nth-child(8)
+      background-image: url('./S5/m2.png')
+
+    &:nth-child(3), &:nth-child(6), &:nth-child(9)
+      background-image: url('./S5/m3.png')
+
+// ====================================
+// == 架構
+// ====================================
+#sec5
+  position: relative
+  display: flex
+.box
+  font-size: 0
+  overflow: hidden
+
+@media screen and (min-width: $bp-pc)
+  #sec5
+    width: 80vw
+    margin: 0 auto
+    padding:
+      top: 7vw
+      bottom: 7vw
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      left: 50%
+      width: 1px
+      top: 7vw
+      bottom: 7vw
+      background-color: #fff
+  .box
+    width: 37vw
+    // height: 34.4vw
+    img
+      width: 100%
+  .text
+    width: 39vw
+    padding:
+      left: 4vw
+@media screen and (max-width: $bp-mb)
+  #sec5
+    flex-direction: column
+    padding-top: 15vw
+
+// ====================================
+// == SWIPER W/H
+// ====================================
+.swiper-container
+  z-index: 2
+@media screen and (min-width: $bp-pc)
+  // h
+  // .swiper-container, // height
+  // .swiper-wrapper,
+  // .swiper-slide
+  //   height: 34.4vw // w * 0.562
+
+  // // w
+  // .swiper-container
+  //   width:  100%
 
 @media screen and (max-width: $bp-mb)
+  // h
+  .swiper-container, // height
+  .swiper-wrapper,
+  .swiper-slide
+    height: 42vw // w * 2.87
+
+  // w
+  .swiper-container
+    // width: 80vw
+
+  // gurter
+  .box
+    position: relative
+    & > div
+      padding-left: calc( (100vw - 83vw) / 2 + 14px)
+
+// --------------------------------
+// PRE NEX
+.box
+  position: relative
+
+.pre, .nxt
+  display: block
+  position: absolute
+  width: 0
+  padding-left: 18px!important
+  height: 31px
+  font:
+    size: 20px
+  z-index: 4
+  cursor: pointer
+  background:
+    size: contain
+  top: 50%
+  transform: translateY(-50%)
+  background:
+    repeat: no-repeat
+
+.pre
+  background:
+    image: url("./all/prev-btn.png")
+    repeat: no-repeat
+
+.nxt
+  background:
+    image: url("./all/next-btn.png")
+
+@media screen and (min-width: $bp-pc)
+  .pre,.nxt
+    display: none
+
+@media screen and (max-width: $bp-mb)
+  $lr: 2vw
+  .box
+    position: relative
+    &:before, &:after
+      position: absolute
+      content: ""
+      width: 15vw
+      height: 100%
+      z-index: 3
+      top: 0
+    &:before
+      left: 0
+      background-image: linear-gradient(to right, rgba(0,74,119,.8), rgba(0,74,119,0))
+    &:after
+      background-image: linear-gradient(to left, rgba(0,74,119,.8), rgba(0,74,119,0))
+      right: 0
+  .pre
+    left: $lr
+
+  .nxt
+    right: $lr
+
+// ====================================
+// == msg
+// ====================================
+.gradient
+  position: absolute
+  width: 100%
+  height: 10vw
+  bottom: 0
+  background-image: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0))
+
+.msg
+  position: absolute
+  left: 10px
+  bottom: 10px
+  color: #fff
+  font-size: 12px
 </style>
-
-<script>
-// @ is an alias to /src
-import { isMobile, isTablet } from '@/utils'
-
-export default {
-  name: 'section1',
-
-  data() {
-    return {
-      isMobile,
-      isTablet,
-      bMbOpen: false
-    }
-  },
-
-  methods: {},
-
-  created() {},
-
-  mounted() {},
-
-  computed: {}
-}
-</script>

@@ -1,248 +1,73 @@
 <template>
   <div class="relative">
     <section id="sec4">
-      <div class="title"
+      <div class="box"
         data-aos-once="false"
-        data-aos="fade-in"
+        data-aos="fade-up"
         data-aos-delay="0"
         data-aos-duration="800"
       >
-        <img src="./S4/title.png" />
-      </div>
-      <div class="text">
-        <div class="text1"><span>頂級醫療 國際學校</span> <span>新富生活 等高對位</span></div>
-        <div class="text2">
-          鄰近新光、榮總、振興、陽明、和信…匯聚頂尖醫療資源就近守護；歐洲學校、美國學校、日僑學校…文教優質環境，等高對位新富貴族生活質地。
-        </div>
-      </div>
-      <div class="box">
-        <swiper :options="swiperOptions">
-          <swiper-slide v-for="(item, i) in swipList" :key="'box' + i">
-            <div class="box_item">
-              <div class="box_text">{{ item }}</div>
-            </div>
+        <div class="pre" @click="prevBtn"></div>
+        <div class="nxt" @click="nextBtn"></div>
+        <swiper v-if="isMobile" :options="swiperOption" ref="swiper4">
+          <swiper-slide v-for="item in list" :key="'s4' + item">
+            <div class="gradient"></div>
+            <div class="msg">{{ item }}</div>
           </swiper-slide>
         </swiper>
+        <swiper v-else :options="swiperOption" ref="swiper4">
+          <swiper-slide v-for="item in 2" :key="'s4' + item">
+          </swiper-slide>
+        </swiper>
+      </div>
+      <div class="text">
+        <h2
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >對位大直水岸 越超大安森林</h2>
+        <p
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >奢綠開闊的公園水岸，總是迷人！<br/>雙北唯一擁有綠地、水岸與雙捷運的特區，大都會公園宛如一筆畫境層層展開，利用水岸河堤打造多達100種遊樂設，成為健康自然的親子樂園，出門講究效率速度，回家追求景觀樂活，讓新世代的美好三重，由此出發！</p>
+        <!-- 2 -->
+        <h2
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >水岸新三重 景觀第一排</h2>
+        <p
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >兩站之距 台北雙星北車特區<br/>西區門戶計畫翻轉台北東西軸線，「台北雙星｣國家門戶續寫台灣未來經濟奇蹟，在繁華便捷與自然樂活之間，仰望未來台北最美的城市天際線，迎風隨享十六座大安森林公園的親水闊綠，享受一種健康又樂活的自由新生活！</p>
+        <ul class="dot4" v-if="!isMobile">
+        <li
+          v-for="item in 2"
+          :key="'dot4' + item"
+          @click="fnDotChange(item)"
+        ></li>
+      </ul>
       </div>
     </section>
   </div>
 </template>
 
-<style lang="sass" scoped>
-@import src/assets/style/myvar
-@import ./sass/share
-// 圖片
-@media screen and (min-width: $bp-pc)
-  .swiper-slide
-    background:
-      position: center
-      size: cover
-    &:nth-child(1), &:nth-child(8), &:nth-child(15)
-      background-image: url('./S4/1.jpg')
-
-    &:nth-child(2), &:nth-child(9), &:nth-child(16)
-      background-image: url('./S4/2.jpg')
-
-    &:nth-child(3), &:nth-child(10), &:nth-child(17)
-      background-image: url('./S4/3.jpg')
-
-    &:nth-child(4), &:nth-child(11), &:nth-child(18)
-      background-image: url('./S4/4.jpg')
-    &:nth-child(5), &:nth-child(12), &:nth-child(19)
-      background-image: url('./S4/5.jpg')
-    &:nth-child(6), &:nth-child(13), &:nth-child(20)
-      background-image: url('./S4/6.jpg')
-    &:nth-child(7), &:nth-child(14), &:nth-child(21)
-      background-image: url('./S4/7.jpg')
-
-@media screen and (max-width: $bp-mb)
-
-  .swiper-slide
-    background:
-      position: center
-      size: cover
-    &:nth-child(1), &:nth-child(8), &:nth-child(15)
-      background-image: url('./S4/3.jpg')
-
-    &:nth-child(2), &:nth-child(9), &:nth-child(16)
-      background-image: url('./S4/4.jpg')
-
-    &:nth-child(3), &:nth-child(10), &:nth-child(17)
-      background-image: url('./S4/5.jpg')
-
-    &:nth-child(4), &:nth-child(11), &:nth-child(18)
-      background-image: url('./S4/6.jpg')
-    &:nth-child(5), &:nth-child(12), &:nth-child(19)
-      background-image: url('./S4/7.jpg')
-    &:nth-child(6), &:nth-child(13), &:nth-child(20)
-      background-image: url('./S4/1.jpg')
-    &:nth-child(7), &:nth-child(14), &:nth-child(21)
-      background-image: url('./S4/2.jpg')
-
-// 總高
-@media screen and (min-width: $bp-pc)
-  .swiper-container, // height 1
-  .swiper-wrapper,
-  .swiper-slide,
-  .box_item
-    height: 20vw
-    // max-height: 70vh
-@media screen and (max-width: $bp-mb) and (orientation: portrait)
-  .swiper-container,
-  .swiper-wrapper,
-  .swiper-slide,
-  .box_item
-    height: 50vw
-
-@media screen and (max-width: $bp-mb) and (orientation: landscape)
-  .swiper-container,
-  .swiper-wrapper,
-  .swiper-slide,
-  .box_item
-    height: 100vh
-
-// --------------------------------
-// -- 我內部介面
-// --------------------------------
-#sec4
-  position: relative
-  z-index: 10
-  display: flex
-  flex-direction: column
-.box
-
-.box_item
-  position: relative
-.box_text
-  font:
-    size: 1vw
-    family: "Noto Sans TC" !important
-    size: calc(12 * 100vw / 375)
-  position: absolute
-  width: 100%
-  bottom: 0
-  color: #fff
-  background: rgba(0,0,0,.5)
-  display: flex
-  align-items: center
-  justify-content: center
-
-@media screen and (min-width: $bp-pc)
-  #sec4
-
-  .box
-    margin:
-      left: 10vw
-      bottom: 6vw
-    width: 90vw
-  .box_text
-    height: 36px
-    font:
-      size: calc(20 * 100vw / 1920)
-
-@media screen and (max-width: $bp-mb)
-  .box
-    width: 120vw
-    margin:
-      left: -2vw
-    order: 1
-  .title
-    order: 2
-  .text
-    order: 3
-  .box_text
-    height: 22px
-
-// --------------------------------
-// --title
-// --------------------------------
-.title
-  margin: 0 auto
-  img
-    width: 100%
-
-@media screen and (min-width: $bp-pc)
-  .title
-    width: 45vw
-    margin-top: 3vw
-@media screen and (max-width: $bp-mb)
-  .title
-    width: 80vw
-    margin:
-      top: 7vw
-      bottom: 5vw
-
-// --------------------------------
-// -- text
-// --------------------------------
-.text
-  color: #fff
-  line-height: 1.5
-  font:
-    size: calc(12 * 100vw / 375)
-.text1
-  font:
-    size: 1.25em
-    weight: 600
-
-.text2
-  font:
-    family: "Noto Sans TC" !important
-    weight: 300
-@media screen and (min-width: $bp-pc)
-  $g: 1.5vw
-  .text
-    display: flex
-    flex-direction: row
-    width: 80vw
-    margin: 2vw auto
-    line-height: 1.7
-    font:
-      size: calc(20 * 100vw / 1920)
-  .text1
-    width: 50%
-    border-right: solid 1px #fff
-    text-align: right
-    padding: 1.5vw 0
-    padding-right: $g
-    font:
-      size: 1.63em
-    span
-      letter-spacing: .2vw
-  .text2
-    width: 50%
-    padding-left: $g
-    text-align: justify
-    font-size: 1vw
-    display: flex
-    align-items: center
-
-@media screen and (max-width: $bp-mb)
-  .text
-
-  .text1
-    margin-bottom: 2vw
-    span
-      display: block
-      text-align: center
-      line-height: 1.5
-      letter-spacing: .06em
-  .text2
-    text-align: center
-    width: 80vw
-    margin: 0 auto
-    margin:
-      bottom: 10vw
-</style>
-
 <script>
-import { isMobile, isTablet } from '@/utils'
+import $ from 'jquery'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 
-export default {
-  name: 'section1',
+import { isMobile, isTablet } from '@/utils'
 
+export default {
+  name: 'swiper-example-thumbs-gallery',
+  title: 's4',
   components: {
     Swiper,
     SwiperSlide
@@ -250,52 +75,75 @@ export default {
 
   data() {
     return {
+      list: [
+        '辰光橋實景拍攝',
+        '大都會公園實景拍攝',
+        '機捷A2a站實景拍攝',
+        '大都會公園空拍',
+        // some
+      ],
+      vm: this,
       isMobile,
       isTablet,
-      bIsOpen: false,
-      swipList: [
-        '日僑學校',
-        '歐洲學校',
-        '陽明醫院',
-        '振興醫院',
-        '新光醫院',
-        '榮民總醫院',
-        '美國學校'
-      ],
-      swiperOptions: {
+      swiperOption: {
+        loop: true,
         breakpoints: {
-          // when window width is >= 320px
           768: {
-            slidesPerView: 4.5,
-            spaceBetween: 15
-          },
-          // when window width is >= 640px
-          0: {
-            slidesPerView: 2.3,
             spaceBetween: 10
+          },
+          0: {
+            slidesPerView: 1.16,
+            spaceBetween: 14
           }
         },
-        // slidesPerView: 4.5,
-        // spaceBetween: 15,
-        loop: true, // 是否 slide 後循環
-        // initialSlide: 0, // 最初 pic index
-        // slidesPerView: 'auto',
         autoplay: {
-          delay: 1500,
-          disableOnInteraction: false // 換頁後是否停止 autoplay
+          delay: 4000,
+          disableOnInteraction: false
         },
-        speed: 1600,
-        grabCursor: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          type: 'bullets'
-        },
+        speed: 800,
+        on: {
+          slideChangeTransitionStart: function() {
+            let eq = this.activeIndex
+            if (!isMobile) {
+              if (eq >= 2) {
+                eq = eq - 2
+              }
+              console.log('eq is ', eq)
+              $('.dot4 li')
+                .removeClass('active')
+                .eq(eq)
+                .addClass('active')
+            } else {
+              if (eq >= 4) {
+                eq = eq - 4
+              }
+              console.log('eq is ', eq)
+              $('.dot4 li')
+                .removeClass('active')
+                .eq(eq)
+                .addClass('active')
+            }
+          }
+        }
       }
     }
   },
 
-  methods: {},
+  methods: {
+    prevBtn() {
+      this.$refs.swiper4.$swiper.slidePrev()
+    },
+    nextBtn() {
+      this.$refs.swiper4.$swiper.slideNext()
+    },
+    fnDotChange(i) {
+      let eq = i - 1
+      if (eq >= 2) {
+        eq = eq - 2
+      }
+      this.$refs.swiper4.$swiper.slideTo(eq)
+    }
+  },
 
   created() {},
 
@@ -304,3 +152,276 @@ export default {
   computed: {}
 }
 </script>
+
+<style lang="sass" scoped>
+@import "src/assets/style/myvar"
+@import ./sass/share
+// ====================================
+// == TEXT
+// ====================================
+.text
+  width: 80vw
+  margin: 0 auto
+  color: #fff
+  line-height: 1.5
+  font:
+    size: calc(12 * 100vw / 375)
+  h2
+    color: $yellow
+    font:
+      size: 1.25em
+      weight: 600
+  p
+    font:
+      family: "Noto Sans TC" !important
+      weight: 300
+@media screen and (min-width: $bp-pc)
+  $g: 2vw
+  .text
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    line-height: 1.7
+    font:
+      size: calc(20 * 100vw / 1920)
+    p, h2
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      // margin-bottom: 3vw
+    & > *
+      &:nth-child(1), &:nth-child(2)
+        // margin-top: 5vw
+      &:nth-child(5), &:nth-child(6)
+        margin-bottom: 5vw
+    h2
+      text-align: right
+      font:
+        size: 1.63em
+      line-height:1.4
+      margin-bottom: .5vw
+    p
+      padding:
+        bottom: 2vw
+      text-align: justify
+      letter-spacing: 0vw
+
+@media screen and (max-width: $bp-mb)
+  .text
+    margin-top: 7vw
+    h2
+      line-height: 1.5
+    p
+      font-size: 3.2vw
+      margin: 4vw 0 10vw
+      &:last-child
+        margin:
+          bottom: 20vw
+
+// ====================================
+// == SWIPER v
+// ====================================
+
+// 圖片
+.swiper-slide
+  background:
+    position: 0 0
+    size: contain
+  position: relative
+
+@media screen and (min-width: $bp-pc)
+  .swiper-slide
+    background-repeat: no-repeat
+    &:nth-child(1), &:nth-child(3), &:nth-child(5)
+      background-image: url('./S4/1.jpg')
+
+    &:nth-child(2), &:nth-child(4), &:nth-child(6)
+      background-image: url('./S4/2.jpg')
+@media screen and (max-width: $bp-mb)
+  .swiper-slide
+    background-repeat: no-repeat
+    &:nth-child(1), &:nth-child(5), &:nth-child(9)
+      background-image: url('./S4/m1.png')
+
+    &:nth-child(2), &:nth-child(6), &:nth-child(10)
+      background-image: url('./S4/m2.png')
+
+    &:nth-child(3), &:nth-child(7), &:nth-child(11)
+      background-image: url('./S4/m3.png')
+
+    &:nth-child(4), &:nth-child(8), &:nth-child(12)
+      background-image: url('./S4/m4.png')
+
+// ====================================
+// == 架構
+// ====================================
+#sec4
+  position: relative
+  display: flex
+.box
+  font-size: 0
+  overflow: hidden
+
+@media screen and (min-width: $bp-pc)
+  #sec4
+    width: 80vw
+    margin: 0 auto
+    padding:
+      top: 7vw
+      bottom: 7vw
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      left: 50%
+      width: 1px
+      top: 7vw
+      bottom: 7vw
+      background-color: #fff
+  .box
+    width: 37vw
+  .text
+    width: 39vw
+    padding:
+      left: 4vw
+@media screen and (max-width: $bp-mb)
+  #sec4
+    flex-direction: column
+    padding-top: 15vw
+
+// ====================================
+// == SWIPER W/H
+// ====================================
+.swiper-container
+  z-index: 2
+@media screen and (min-width: $bp-pc)
+  // h
+  .swiper-container, // height
+  .swiper-wrapper,
+  .swiper-slide
+    height: 34.4vw // w * 0.562
+
+  // w
+  .swiper-container
+    width:  100%
+
+@media screen and (max-width: $bp-mb)
+  // h
+  .swiper-container, // height
+  .swiper-wrapper,
+  .swiper-slide
+    height: 42vw // w * 2.87
+
+  // w
+  .swiper-container
+    // width: 80vw
+
+  // gurter
+  .box
+    position: relative
+    & > div
+      padding-left: calc( (100vw - 83vw) / 2 + 14px)
+
+// --------------------------------
+// PRE NEX
+.box
+  position: relative
+
+.pre, .nxt
+  display: block
+  position: absolute
+  width: 0
+  padding-left: 18px!important
+  height: 31px
+  font:
+    size: 20px
+  z-index: 4
+  cursor: pointer
+  background:
+    size: contain
+  top: 50%
+  transform: translateY(-50%)
+  background:
+    repeat: no-repeat
+
+.pre
+  background:
+    image: url("./all/prev-btn.png")
+    repeat: no-repeat
+
+.nxt
+  background:
+    image: url("./all/next-btn.png")
+
+@media screen and (min-width: $bp-pc)
+  .pre,.nxt
+    display: none
+
+@media screen and (max-width: $bp-mb)
+  $lr: 2vw
+  .box
+    position: relative
+    &:before, &:after
+      position: absolute
+      content: ""
+      width: 15vw
+      height: 100%
+      z-index: 3
+      top: 0
+    &:before
+      left: 0
+      background-image: linear-gradient(to right, rgba(0,74,119,.8), rgba(0,74,119,0))
+    &:after
+      background-image: linear-gradient(to left, rgba(0,74,119,.8), rgba(0,74,119,0))
+      right: 0
+  .pre
+    left: $lr
+
+  .nxt
+    right: $lr
+
+// --------------------------------
+// dot
+$w: 10px
+@media screen and (min-width: $bp-pc)
+  .dot4
+    display: flex
+    height: 6px
+    margin:
+      top: 4vw
+      bottom: 0 !important
+    li
+      border: solid 1px #fff
+      width: 2vw
+      position: relative
+      cursor: pointer
+      margin-right: .5vw
+      &:last-child
+        margin: 0
+      &.active
+        cursor: default
+        background: #fff
+
+@media screen and (max-width: $bp-mb)
+  .dot4
+    display: none
+
+// ====================================
+// == msg
+// ====================================
+.gradient
+  position: absolute
+  width: 100%
+  height: 10vw
+  bottom: 0
+  background-image: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0))
+
+.msg
+  position: absolute
+  left: 10px
+  bottom: 10px
+  color: #fff
+  font-size: 12px
+</style>

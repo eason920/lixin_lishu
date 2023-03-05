@@ -45,7 +45,7 @@
       background-image: url('./S0/3.jpg')
 
     &:nth-child(4), &:nth-child(10), &:nth-child(16)
-      background-image: url('./S0/4.jpg') 
+      background-image: url('./S0/4.jpg')
     &:nth-child(5), &:nth-child(11), &:nth-child(17)
       background-image: url('./S0/5.jpg')
     &:nth-child(6), &:nth-child(12), &:nth-child(18)
@@ -189,9 +189,9 @@
 @media screen and (max-width: $bp-mb)
   .box
     width: 120vw
-    margin:
-      left: -2vw
     order: 2
+    & > div
+      padding-left: calc( 25vw + 10px)
   .title
     order: 1
   .box_text
@@ -238,12 +238,12 @@ export default {
       isTablet,
       bIsOpen: false,
       swipList: [
-        {from: '#中央社', msg: '6「北士科」台北市最後大型重劃區 明眼人的價值出手！', link: 'https://www.cna.com.tw/Postwrite/Chi/333239?fbclid=IwAR1m9hysdHqW7rMYn01b_HIdCji5FHyFmAQytZTAGz_2wIYQtmSlKey7lss'},
-        {from: '#工商時報', msg: '1台北未來20年定錨「北投士林科技園區」', link: 'https://ctee.com.tw/industrynews/building/776280.html'},
-        {from: '#經濟日報', msg: '2北士科全面主導 大台北未來20年願景', link: 'https://money.udn.com/money/story/5638/6851449'},
-        {from: '#Yahoo新聞', msg: '3房市焦點 「北士科」建設話題超越東西區', link: 'https://tw.news.yahoo.com/news/%E6%88%BF%E5%B8%82%E7%84%A6%E9%BB%9E-%E3%80%8C%E5%8C%97%E5%A3%AB%E7%A7%91%E3%80%8D%E5%BB%BA%E8%A8%AD%E8%A9%B1%E9%A1%8C%E8%B6%85%E8%B6%8A%E6%9D%B1%E8%A5%BF%E5%8D%80-102844312.html'},
-        {from: '#工商時報', msg: '4北士科純住宅供給量低 賣一戶少一戶 更彰顯珍貴價值', link: 'https://ctee.com.tw/industrynews/building/788789.html'},
-        {from: '#Yahoo新聞', msg: '5兼具市中心機能＆重劃區潛力 北市未來就看北士科', link: 'https://tw.news.yahoo.com/%E5%85%BC%E5%85%B7%E5%B8%82%E4%B8%AD%E5%BF%83%E6%A9%9F%E8%83%BD%EF%BC%86%E9%87%8D%E5%8A%83%E5%8D%80%E6%BD%9B%E5%8A%9B-%E5%8C%97%E5%B8%82%E6%9C%AA%E4%BE%86%E5%B0%B1%E7%9C%8B%E5%8C%97%E5%A3%AB%E7%A7%91-055201258.html'},
+        { from: '#中央社', msg: '6「北士科」台北市最後大型重劃區 明眼人的價值出手！', link: 'https://www.cna.com.tw/Postwrite/Chi/333239?fbclid=IwAR1m9hysdHqW7rMYn01b_HIdCji5FHyFmAQytZTAGz_2wIYQtmSlKey7lss' },
+        { from: '#工商時報', msg: '1台北未來20年定錨「北投士林科技園區」', link: 'https://ctee.com.tw/industrynews/building/776280.html' },
+        { from: '#經濟日報', msg: '2北士科全面主導 大台北未來20年願景', link: 'https://money.udn.com/money/story/5638/6851449' },
+        { from: '#Yahoo新聞', msg: '3房市焦點 「北士科」建設話題超越東西區', link: 'https://tw.news.yahoo.com/news/%E6%88%BF%E5%B8%82%E7%84%A6%E9%BB%9E-%E3%80%8C%E5%8C%97%E5%A3%AB%E7%A7%91%E3%80%8D%E5%BB%BA%E8%A8%AD%E8%A9%B1%E9%A1%8C%E8%B6%85%E8%B6%8A%E6%9D%B1%E8%A5%BF%E5%8D%80-102844312.html' },
+        { from: '#工商時報', msg: '4北士科純住宅供給量低 賣一戶少一戶 更彰顯珍貴價值', link: 'https://ctee.com.tw/industrynews/building/788789.html' },
+        { from: '#Yahoo新聞', msg: '5兼具市中心機能＆重劃區潛力 北市未來就看北士科', link: 'https://tw.news.yahoo.com/%E5%85%BC%E5%85%B7%E5%B8%82%E4%B8%AD%E5%BF%83%E6%A9%9F%E8%83%BD%EF%BC%86%E9%87%8D%E5%8A%83%E5%8D%80%E6%BD%9B%E5%8A%9B-%E5%8C%97%E5%B8%82%E6%9C%AA%E4%BE%86%E5%B0%B1%E7%9C%8B%E5%8C%97%E5%A3%AB%E7%A7%91-055201258.html' },
       ],
       swiperOptions: {
         breakpoints: {
