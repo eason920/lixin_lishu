@@ -134,8 +134,9 @@ export default {
 
 .contact-info {
   background: $contact_bg;
-  // background-image: url('../assets/img/contact_bg.jpg');/
-  background-size: cover;
+  background-image: url('../projects/lishu/S9/bg.png');
+  background-size: 100% auto;
+  background-position: center bottom;
   //box-shadow: $contact_shadow;
   display: flex;
   flex-direction: column;
@@ -149,8 +150,8 @@ export default {
   background-attachment: fixed;
   background-position: 0% 50%; */
   transform: translateY(0);
-  margin: 2vw auto 2vw;
-  padding: 70px 0 30px;
+  margin: 2vw auto 0;
+  padding: 70px 0 60px;
 
   .decor-5 {
     width: 22vw;
@@ -185,7 +186,7 @@ export default {
   margin-bottom: 20px;
   cursor: pointer;
   text-decoration: none;
-  color: #9FD9F6;
+  color: #fff;
   background: #d1b373;
   // box-shadow: $contact_btn_border;
   transition: all 0.5s;
@@ -198,7 +199,7 @@ export default {
     width: 49%;
   }
   svg {
-    color: #9FD9F6;
+    color: #fff;
     width: 24px;
     height: 24px;
     margin-right: 12px;
@@ -210,7 +211,7 @@ export default {
     // color: $contact_btn_hover_color;
 
     svg {
-      color: #9FD9F6;
+      color: #fff;
     }
   }
   &::before {
@@ -238,12 +239,12 @@ export default {
 .address {
   width: 600px;
   height: 60px;
-  background: none;
+  background-color: rgba(0,0,0,.85);
   // box-shadow: $contact_btn_border;
   border-radius: 0;
-  border: 1px solid #9FD9F6;
+  border: 1px solid #fff;
   font-family: $family4;
-  color: #9FD9F6;
+  color: #fff;
   + .google-btn,
   + .btn {
     border-radius: 0;
@@ -257,15 +258,16 @@ export default {
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   // background: #d1b373;
   background-position: center !important;
-  background-image: linear-gradient(180deg, #BDE5FF 0%, #83B9D5 47.92%, #002B43 100%);
+  background-color: #003555;
+  // background-image: linear-gradient(180deg, #BDE5FF 0%, #83B9D5 47.92%, #002B43 100%);
   // box-shadow: #d1b373;
   transition: all 0.5s;
 
   svg {
-    color: #000;
+    color: #fff;
     width: 24px;
     height: 24px;
     margin-right: 12px;
@@ -299,6 +301,7 @@ export default {
 /* 手機尺寸 */
 @media only screen and (max-width: 767px) {
   .contact-info {
+    background-image: none;
     display: flex;
     width: 100%;
     height: auto;

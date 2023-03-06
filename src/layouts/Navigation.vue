@@ -140,7 +140,7 @@ export default {
 .label
   font-size: 13px
   font-weight: lighter
-  margin-top: 1vw
+  margin-top: .6vw
 
 </style>
 

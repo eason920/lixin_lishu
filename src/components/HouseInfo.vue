@@ -50,7 +50,13 @@ export default {
 $c: #9FD9F6
 .house-info
   width: 100vw
-  background: linear-gradient(180deg, #000308 0%, #003348 100%)
+  background:
+    // image: linear-gradient(180deg, #000308 0%, #003348 100%)
+    color: #004A77
+    image: url('../projects/lishu/S9/bg.png')
+    repeat: no-repeat
+    position: center bottom
+    size: 150% auto
   position: relative
   z-index: 1
 
@@ -79,6 +85,9 @@ $c: #9FD9F6
   flex-wrap: wrap
   border-top: solid 1px $c
   width: 100%
+  .item
+    h3, p
+      font-family: "Noto Serif TC", serif !important
 
 .item
   margin-bottom: 0
@@ -98,7 +107,7 @@ $c: #9FD9F6
   .label, .desc
     font:
       family: "Noto Sans TC" !important
-      size: calc(16 * 100vw / 1920)
+      size: calc(21 * 100vw / 1920)
 
   .label
     font-size: 1.7
@@ -170,7 +179,6 @@ $c: #9FD9F6
   display: flex
   flex-direction: column
   align-items: flex-start
-  justify-content: space-between
 .logo_box
   display: flex
 
@@ -204,6 +212,7 @@ $c: #9FD9F6
       padding-right: 0vw
   .logo_logo
     width: 22vw
+    margin-top: 7vw
 
 @media screen and (max-width: 768px)
   .content

@@ -1,28 +1,19 @@
 <template>
   <div class="relative">
     <section id="sec2">
-      <ball class="ball" />
+      <ball class="ball is1" />
+      <ball2 class="ball is2" />
       <!-- PC -->
-      <div class="share_box is_pc" v-if="!isMobile">
-        <!-- <video autoplay loop muted>
-          <source src="https://h35.banner.tw/lishu/123.mp4">
-        </video> -->
-        <div class="logo_pc" data-aos-once="false" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1400">
+      <div class="is_pc" v-if="!isMobile">
+        <div class="logo" data-aos-once="false" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1400">
           <img src="./S2/logo_right.png" />
         </div>
-        <div class="title">
-          <div data-aos-once="false" data-aos="fade-up" data-aos-delay="0" data-aos-duration="2000">
-            <img class="title_img1" src="./all/subtitle.png" />
-          </div>
-          <div data-aos-once="false" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1800">
-            <div class="title_box">
-              <img class="title_box_img2" src="./S1/appoint_pc.png" />
-            </div>
-          </div>
+        <div data-aos-once="false" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1400">
+          <img class="subtitle" src="./all/subtitle.png" />
         </div>
       </div>
       <!-- MB -->
-      <div class="share_box is_mb" v-else>
+      <div class="is_mb" v-else>
         <!-- <video autoplay loop muted>
           <source src="./S1/portrait.mp4">
           <source src="https://h35.banner.tw/lishu/123.mp4">
@@ -44,16 +35,6 @@
 @import "src/assets/style/myvar"
 @import ./sass/share
 
-.share_box
-  position: relative
-  height: 100%
-video
-  object-fit: fill
-  height: 100%
-  width: 100%
-  position: absolute
-  top: 0
-  left: 0
 @media screen and (min-width: $bp-pc)
   #sec2
     // height: 56.25vw
@@ -62,40 +43,26 @@ video
     min-height: calc(100vw * 900 / 1920)
     max-height: calc(100vw * 1080 / 1920)
     background:
-      color: gray
+      image: url(./S2/bg_pc.png)
+      size: contain
   .is_pc
-    .logo_pc
-      position: absolute
-      right: 4vw
-      top: 19vw
-      width: 50vw
+    position: absolute
+    left: 12vw
+    top: 19vw
+    .logo
+      width: 40vw
       img
         width: 100%
-    .title
-      position: absolute
-      bottom: 0
-      right: 6vw
+    .subtitle
+      width: 37vw
+      margin-left: 1.7vw
       display: flex
-      padding:
-        bottom: 3vw
-      z-index: 2
-    .title_img1
-      width: 30vw // title height
-      margin:
-        right: 2vw
-    .title_box
-      @include classicHover
-      transition: .3s
-      padding: 0 23px
-      display: flex
-      align-items: center
-      height: 100%
-    .title_box_img2
-      width: 12vw
 
 @media screen and (max-width: $bp-mb)
   #sec2
-    // height: calc( 100vh - 63px )
+    background:
+      image: url(./S2/bg_mb.png)
+      size: cover
   .is_mb
     height: 100vh
     .logo_mb
@@ -107,11 +74,29 @@ video
         width: 100%
 
 // ====================================
-// == BALL
+// == ball
 // ====================================
 .ball
-  width: 30px
-  height: 30px
+  position: absolute
+  z-index: 1
+  &.is1
+    width: 45px
+    height: 45px
+    left: 8.5vw
+    top: 31vw
+  &.is2
+    width: 47px
+    height: 47px
+    left: 38vw
+    top: 21vw
+@media screen and (max-width: $bp-mb)
+  .ball
+    &.is1
+      left: 9vw
+      top: 108vw
+    &.is2
+      right: 4vw
+      bottom: 14vw
 
 </style>
 
@@ -120,10 +105,12 @@ video
 import { isMobile, isTablet } from '@/utils'
 import $ from 'jquery'
 import ball from './ball.vue'
+import ball2 from './ball2.vue'
 export default {
   name: 'section1',
   components: {
     ball,
+    ball2,
   },
   data() {
     return {

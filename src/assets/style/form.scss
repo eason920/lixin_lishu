@@ -45,7 +45,7 @@
         font-size: 16px !important;
         border: none !important;
         border-radius: 0px !important;
-        color: #9FD9F6;
+        color: #fff;
         background-color: transparent;
         font-family: $family3;
 
@@ -77,17 +77,17 @@
     span {
         font-size: 16px !important;
         font-weight: bold;
-        color: #000;
+        color: #fff;
         font-family: "Arial, Times New Roman"!important;
         letter-spacing: 5px;
     }
-    width: 320px !important;
+    width: 305px !important;
     height: 72px !important;
     // opacity: 0 !important;
     border-radius: 0 !important;
     background-position: center !important;
-    background-color: none!important;
-    background-image: linear-gradient(180deg, #BDE5FF 0%, #83B9D5 47.92%, #002B43 100%)!important;
+    background-color: #003555!important;
+    // background-image: linear-gradient(180deg, #BDE5FF 0%, #83B9D5 47.92%, #002B43 100%)!important;
 
     margin: 0 auto !important;
     margin-top: 20px !important;
@@ -98,8 +98,8 @@
     font-family: $family3;
 
     &.is-disabled {
-        background-color: none!important;
-        background-image: linear-gradient(180deg, #BDE5FF 0%, #83B9D5 47.92%, #002B43 100%)!important;
+        background-color: #003555!important;
+        // background-image: linear-gradient(180deg, #BDE5FF 0%, #83B9D5 47.92%, #002B43 100%)!important;
         opacity: 0.6;
     }
 
@@ -162,7 +162,7 @@
     }
 
     .form-submit {
-        width: 90% !important;
+        width: 92% !important;
         font-size: 16px !important;
         margin: 10px auto !important;
     }

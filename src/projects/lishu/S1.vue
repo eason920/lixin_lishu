@@ -22,10 +22,10 @@
       </div>
       <!-- MB -->
       <div class="share_box is_mb" v-else>
-        <video autoplay loop muted>
-          <source src="./S1/portrait.mp4">
-          <!-- <source src="https://h35.banner.tw/lishu/123.mp4"> -->
-        </video>
+        <!-- <video autoplay loop muted>
+          <source src="https://h35.banner.tw/lishu/123.mp4">
+        </video> -->
+        <img class="demo" src="./S1/bg_mb.jpg" />
         <div class="logo_mb"
           data-aos-once="false"
           data-aos="fade-up"
@@ -89,16 +89,19 @@ video
       align-items: center
       height: 100%
     .title_box_img2
-      width: 12vw
+      width: 9vw
+      margin-bottom: .5vw
 
 @media screen and (max-width: $bp-mb)
   #sec1
     // height: calc( 100vh - 63px )
   .is_mb
-    height: 100vh
+    .demo
+      width: 100%
+      height: auto
     .logo_mb
       position: absolute
-      top: 35vh
+      top: 30vw
       left: 5vw
       width: 90vw
       img

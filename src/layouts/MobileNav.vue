@@ -94,7 +94,7 @@ export default {
 .mobile-nav {
   width: 100%;
   height: 63px;
-  background: #000;
+  background: #003555;
 
   display: flex;
   position: fixed;

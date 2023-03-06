@@ -85,7 +85,7 @@
           :disabled="!checked || !isVerify"
           @click="submit"
           :loading="isSubmit"
-          >即刻預約 APPOINTMENT</el-button
+          >即刻預約<br/>APPOINTMENT</el-button
         >
         <Loading :loading="isSubmit" :isOpacity="true" />
       </div>
@@ -259,10 +259,28 @@ export default {
      margin: 0 0 calc(100vw * 31 / 1920) 0;
     }
     .title {
-      color: #9FD9F6;
+      color: #fff;
       font-size: calc(100vw * 72 / 1920);
       font-family:'Times New Roman' !important;
       font-weight: 500;
+      margin: 0 auto;
+      position: relative;
+      width: 920px;
+      margin-bottom: 4vw
+    }
+    .title:before, .title:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      background-color: #fff;
+      width: 290px;
+    }
+    .title:before{
+      left: 0
+    }
+    .title:after{
+      right: 0
     }
     .subtitle {}
   }
@@ -312,7 +330,7 @@ export default {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    border: solid 1px #9FD9F6;
+    border: solid 1px #fff;
     padding: 5px 5px 5px 15px;
     border-radius: 0;
 
@@ -329,7 +347,7 @@ export default {
       font-size: 16px;
       font-weight: 500;
       opacity: 0.8;
-      color: #9FD9F6;
+      color: #fff;
       text-align: left;
       white-space: nowrap;
     }
@@ -388,7 +406,11 @@ export default {
       margin: 0 0 calc(100vw * 20 / 375) 0;
       }
       .title {
-      font-size: calc(100vw * 29 / 375);
+        font-size: calc(100vw * 29 / 375);
+        width: calc( 100% - 60px );
+      }
+      .title:before, .title:after {
+        width: calc( (100% - 60px - 175px)/2 )
       }
   }
     .order {
@@ -435,7 +457,6 @@ export default {
     }
 
     .form-submit {
-      width: 100%!important;
       margin-top: 25px!important;
       margin-bottom: 5px!important
     }

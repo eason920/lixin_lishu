@@ -13,7 +13,7 @@
   50%
     transform: translateY(5px)
   100%
-    transform: translateY(-4px)
+    transform: translateY(-5px)
 
 .ball_wave
   height: 100%
