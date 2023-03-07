@@ -69,9 +69,9 @@ export default {
   data() {
     return {
       list: [
+        '2物業情境示意圖',
         '新美齊物業',
-        '物業情境示意圖',
-        '物業情境示意圖',
+        '1物業情境示意圖',
         // some
       ],
       vm: this,

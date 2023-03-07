@@ -17,15 +17,12 @@
       <img class="is_mb" src="../projects/lishu/all/sbg_mb.png" />
       <img class="is_pc" src="../projects/lishu/all/sbg_pc.png" />
     </div>
-    <vue-lazy-component class="section" id="section1" @init="init">
+    <vue-lazy-component class="section" id="section1" style="" @init="init">
       <S1 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section2" @init="init">
       <S2 />
     </vue-lazy-component>
-    <!-- <vue-lazy-component class="section" id="section0" @init="init">
-      <S0 />
-    </vue-lazy-component> -->
     <vue-lazy-component class="section" id="section3" @init="init">
       <S3 />
     </vue-lazy-component>
@@ -67,7 +64,6 @@ import Loading from '@/components/Loading.vue'
 // import Indigator from '@/components/Indigator.vue'
 // import SwiperDemo from '@/projects/lishu/swiperDemo_S7_single.vue'
 import MClose from '@/projects/lishu/MClose.vue'
-import S0 from '@/projects/lishu/S0.vue'
 import S1 from '@/projects/lishu/S1.vue'
 import S2 from '@/projects/lishu/S2.vue'
 import S3 from '@/projects/lishu/S3.vue'
@@ -89,7 +85,6 @@ export default {
     MobileNav,
     // SwiperDemo,
     MClose,
-    S0,
     S1,
     S2,
     S3,
@@ -130,16 +125,42 @@ export default {
           .attr('src', $(img).attr('src'))
       })
 
-      // const fnPcTop1 = () => {
-      //   const h = document.getElementById('section1').offsetHeight
-      //   const st = $(window).scrollTop() + $(window).height()
-      //   const top = 'top:' + (h + st / 100 * -15) + 'px'
-      //   this.pcTop1 = top
-      // }
+      let start = 0;
+      let end = 0;
+      setTimeout(()=>{
+        const h1 = $("#section1").height();
+        const h2 = $("#section2").height();
+        const h3 = $("#section3").height();
+        const h4 = $("#section4").height();
+        const h5 = $("#section5").height();
+        const h6 = $("#section6").height();
+        const h7 = $("#section7").height();
+        start = h1 + h2;
+        end = start + h3 + h4 + h5 + h6 + h7;
+        console.log("h1 is", h1, ' / h2 is ', h2, ' / start is ', start, ' / end is ', end);
+      }, 1000);
+      $(window).scroll(()=>{
+        const st = $(window).scrollTop();
+        // console.log(st);
+        switch(true){
+          case st < start:
+            // console.log("< start, absoulte start");
+            $('.sbg').removeAttr('style').css('top', start);
+            break;
+          case st >= start && st < end:
+            // console.log('fixed');
+            $('.sbg').removeAttr('style').css({'position': 'fixed', 'top': 0});
+            break;
+          case st >= end:
+            // console.log("> end, absolute end");
+            $('.sbg').removeAttr('style').css('top', end);
+            break;
+          default:
+        }
+      })
     })
   },
   mounted() {
-
   },
   methods: {
     init() {}
@@ -162,7 +183,7 @@ section
   position: relative
 .sbg
   width: 100vw
-  position: fixed
+  position: absolute
   img
     width: 100%
 

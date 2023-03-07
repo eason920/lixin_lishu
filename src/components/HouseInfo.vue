@@ -47,7 +47,7 @@ export default {
 
 <style lang="sass" scoped>
 @import "@/assets/style/variableColor.scss"
-$c: #9FD9F6
+$c: #fff
 .house-info
   width: 100vw
   background:

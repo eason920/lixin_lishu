@@ -16,10 +16,10 @@
               <label>手機</label>
               <el-input v-model="form.phone" placeholder></el-input>
             </div>
-            <div class="row">
+            <!-- <div class="row">
               <label>信箱</label>
               <el-input v-model="form.email" placeholder></el-input>
-            </div>
+            </div> -->
             <div class="row">
               <label>居住城市</label>
               <el-select v-model="form.city" placeholder>
@@ -274,7 +274,8 @@ export default {
       top: 50%;
       height: 1px;
       background-color: #fff;
-      width: 290px;
+      width: 18vw;
+      max-width: 210px;
     }
     .title:before{
       left: 0
@@ -307,7 +308,7 @@ export default {
   }
 
   .group {
-    height: 360px;
+    height: 286px;
     margin-bottom: 40px;
 
     &:nth-child(1) {

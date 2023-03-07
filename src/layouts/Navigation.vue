@@ -19,13 +19,13 @@
         <div class="label">地圖導航</div>
       </a>
 
-      <el-dialog title :visible.sync="isShowCallDialog" width="90%" :modal-append-to-body="false">
+      <el-dialog title :visible.sync="isShowCallDialog" width="500px" :modal-append-to-body="false">
         <CallDialog :phone="info.phone" />
       </el-dialog>
-      <el-dialog title :visible.sync="isShowMessengerDialog" width="90%" :modal-append-to-body="false">
+      <el-dialog title :visible.sync="isShowMessengerDialog" width="500px" :modal-append-to-body="false">
         <MessengerDialog :messenger="info.fbMessage" />
       </el-dialog>
-      <el-dialog title :visible.sync="isShowMapDialog" width="90%" :modal-append-to-body="false">
+      <el-dialog title :visible.sync="isShowMapDialog" width="500px" :modal-append-to-body="false">
         <MapDialog :link="info.googleLink" :address="info.address" />
       </el-dialog>
     </div>

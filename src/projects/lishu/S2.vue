@@ -14,17 +14,11 @@
       </div>
       <!-- MB -->
       <div class="is_mb" v-else>
-        <!-- <video autoplay loop muted>
-          <source src="./S1/portrait.mp4">
-          <source src="https://h35.banner.tw/lishu/123.mp4">
-        </video> -->
-        <div class="logo_mb"
-          data-aos-once="false"
-          data-aos="fade-up"
-          data-aos-delay="0"
-          data-aos-duration="2000"
-        >
-          <img src="./S1/logo_mb.png" />
+        <div class="logo" data-aos-once="false" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1400">
+          <img src="./S2/logo_right.png" />
+        </div>
+        <div class="subtitle" data-aos-once="false" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1400">
+          <img src="./all/subtitle.png" />
         </div>
       </div>
     </section>
@@ -45,6 +39,7 @@
     background:
       image: url(./S2/bg_pc.png)
       size: contain
+      color: #004A77
   .is_pc
     position: absolute
     left: 12vw
@@ -63,15 +58,23 @@
     background:
       image: url(./S2/bg_mb.png)
       size: cover
+      color: #004A77
+      position: center
   .is_mb
-    height: 100vh
-    .logo_mb
+    height: 50vh
+    & > div
       position: absolute
-      top: 35vh
+      z-index: 1
+    img
+      width: 100%
+    .logo
+      width: 75vw
       left: 5vw
-      width: 90vw
-      img
-        width: 100%
+      top: 38vw
+    .subtitle
+      width: 88vw
+      left: 6vw
+      bottom: 8vw
 
 // ====================================
 // == ball
@@ -79,24 +82,30 @@
 .ball
   position: absolute
   z-index: 1
-  &.is1
-    width: 45px
-    height: 45px
-    left: 8.5vw
-    top: 31vw
-  &.is2
-    width: 47px
-    height: 47px
-    left: 38vw
-    top: 21vw
+@media screen and (min-width: $bp-pc)
+  .ball
+    &.is1
+      width: 45px
+      height: 45px
+      left: 8.5vw
+      top: 31vw
+    &.is2
+      width: 47px
+      height: 47px
+      left: 38vw
+      top: 20vw
 @media screen and (max-width: $bp-mb)
   .ball
     &.is1
-      left: 9vw
-      top: 108vw
+      width: 25px
+      height: 25px
+      left: 3vw
+      top: 60vw
     &.is2
-      right: 4vw
-      bottom: 14vw
+      width: 25px
+      height: 25px
+      left: 52vw
+      top: 24vw
 
 </style>
 

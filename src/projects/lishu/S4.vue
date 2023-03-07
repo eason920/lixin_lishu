@@ -108,7 +108,6 @@ export default {
               if (eq >= 2) {
                 eq = eq - 2
               }
-              console.log('eq is ', eq)
               $('.dot4 li')
                 .removeClass('active')
                 .eq(eq)
@@ -117,7 +116,6 @@ export default {
               if (eq >= 4) {
                 eq = eq - 4
               }
-              console.log('eq is ', eq)
               $('.dot4 li')
                 .removeClass('active')
                 .eq(eq)

@@ -58,7 +58,12 @@ export default {
 
   data() {
     return {
-      list: ['紐約曼哈頓水岸', '巴黎塞納河左岸', '倫敦泰晤士河南岸'],
+      list: [
+        '巴黎塞納河左岸',
+        '倫敦泰晤士河南岸',
+        '紐約曼哈頓水岸',
+        // some
+      ],
       vm: this,
       isMobile,
       isTablet,
@@ -247,7 +252,7 @@ export default {
 
 @media screen and (max-width: $bp-mb)
   #sec3
-    padding-top: 15vw
+    padding-top: 20vw
   // h
   .swiper-container, // height
   .swiper-wrapper,

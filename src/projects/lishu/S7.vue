@@ -71,9 +71,9 @@ export default {
   data() {
     return {
       list: [
-        '大都會公園空拍',
         '辰光橋實景拍攝',
         '外觀合成示意圖',
+        '大都會公園空拍',
         // some
       ],
       vm: this,
