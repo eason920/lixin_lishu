@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative sec3">
     <section id="sec3">
       <div class="box"
         data-aos-once="false"
@@ -129,6 +129,18 @@ export default {
 // ====================================
 // == TEXT
 // ====================================
+.sec3
+  background: #004A77BB
+  &::before
+    position: absolute
+    content: ""
+    display: block
+    height: 20vw
+    width: 100%
+    background: linear-gradient(to top,  #004A77BB 0%, #004A7700 100%)
+    bottom: 100%
+    left: 0
+
 .text
   width: 80vw
   margin: 0 auto

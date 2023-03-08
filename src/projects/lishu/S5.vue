@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative sec5">
     <section id="sec5">
       <div class="box"
         data-aos-once="false"
@@ -148,6 +148,8 @@ export default {
 // ====================================
 // == TEXT
 // ====================================
+.sec5
+  background: #004A77BB
 .text
   width: 80vw
   margin: 0 auto

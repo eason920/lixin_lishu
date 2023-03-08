@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="contact-info" id="contact-info">
+      <water class="water" />
       <!-- <div class="absolute decor decor-5">
         <img
           class="decor-img"
@@ -88,12 +89,14 @@
 <script>
 import info from '@/info'
 import { isMobile, isTablet } from '@/utils'
+import water from '@/projects/lishu/water.vue'
 import CallDialog from '@/components/Dialog/Call'
 import MessengerDialog from '@/components/Dialog/Messenger'
 import MapDialog from '@/components/Dialog/Map'
 export default {
   name: 'contactInfo',
   components: {
+    water,
     CallDialog,
     MessengerDialog,
     MapDialog
@@ -101,7 +104,6 @@ export default {
   data() {
     return {
       info,
-
       isMobile,
       isTablet,
       isShowCallDialog: false,
@@ -134,7 +136,7 @@ export default {
 
 .contact-info {
   background: $contact_bg;
-  background-image: url('../projects/lishu/S9/bg.png');
+  // background-image: url('../projects/lishu/S9/bg.png');
   background-size: 100% auto;
   background-position: center bottom;
   //box-shadow: $contact_shadow;
@@ -152,6 +154,7 @@ export default {
   transform: translateY(0);
   margin: 2vw auto 0;
   padding: 70px 0 60px;
+  overflow: hidden;
 
   .decor-5 {
     width: 22vw;
@@ -162,6 +165,15 @@ export default {
     img {
       width: 100%;
     }
+  }
+  .water{
+    position: absolute;
+    background:#003555;
+    left: 0vw;
+    top:-2vw;
+    z-index: -1;
+    opacity: .6;
+    width: 100%;
   }
 }
 
@@ -239,6 +251,7 @@ export default {
 .address {
   width: 600px;
   height: 60px;
+  letter-spacing: 0;
   background-color: rgba(0,0,0,.85);
   // box-shadow: $contact_btn_border;
   border-radius: 0;
@@ -307,13 +320,20 @@ export default {
     height: auto;
     padding: 20px 30px 30px;
     transform: none;
-    position: static;
     margin: 0 auto 40px auto;
 
     .logo {
       width: $contact_logo_mobile_width;
       height: auto;
     }
+  .water{
+    background:none;
+    left:-20vw;
+    top:30vw;
+    z-index: -1;
+    transform: rotate(-30deg);
+    width: 200%;
+  }
   }
 
   .btn {

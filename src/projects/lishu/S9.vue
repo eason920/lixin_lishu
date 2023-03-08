@@ -1,6 +1,7 @@
 <template>
   <div class="relative">
     <section id="sec9">
+    <water class="water" />
     <div class="logo">
         <div class="aos"
           data-aos-once="false"
@@ -33,12 +34,22 @@
 #sec9
   background:
     color: #004A77
-    image: url(./S9/bg.png)
+    // image: url(./S9/bg.png)
     repeat: no-repeat
     position: center bottom
     size: contain
   img
     width: 100%
+    
+  &::before
+    position: absolute
+    content: ""
+    display: block
+    height: 20vw
+    width: 100%
+    background: linear-gradient(to top,  #004A77FF 0%, #004A7700 100%)
+    bottom: 100%
+    left: 0
 .logo, .subtitle
   position: absolute
   left: 50%
@@ -46,6 +57,12 @@
 .aos
   width: 100%
 
+.water
+  position: absolute
+  left: 0vw
+  top: 43vw
+  width:100vw
+  opacity: .5
 @media screen and (min-width: $bp-pc)
   #sec9
     height: 55vw
@@ -95,11 +112,13 @@
 <script>
 // @ is an alias to /src
 import { isMobile, isTablet } from '@/utils'
+import water from './water.vue'
 import ball from './ball.vue'
 import ball2 from './ball2.vue'
 export default {
   name: 'S8',
   components: {
+    water,
     ball,
     ball2
   },

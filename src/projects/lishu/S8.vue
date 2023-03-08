@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative sec8">
     <section id="sec8">
       <div class="box"
         data-aos-once="false"
@@ -148,11 +148,15 @@ export default {
 // ====================================
 // == TEXT
 // ====================================
+.sec8
+  background: #004A77BB
+
 .text
   width: 80vw
   margin: 0 auto
   color: #fff
   line-height: 1.5
+  z-index: 2
   font:
     size: calc(12 * 100vw / 375)
   h2

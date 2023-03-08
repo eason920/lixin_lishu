@@ -1,5 +1,6 @@
 <template>
   <div class="house-info" id="house-info">
+    <water class="water" />
     <div class="content">
       <div class="logo">
         <div class="logo_box">
@@ -30,9 +31,11 @@
 import info from '@/info'
 import Footer from '@/layouts/Footer.vue'
 import { isMobile, isTablet } from '@/utils'
+import water from '@/projects/lishu/water.vue'
 export default {
   name: 'houseInfo',
   components: {
+    water,
     Footer
   },
   data() {
@@ -53,12 +56,19 @@ $c: #fff
   background:
     // image: linear-gradient(180deg, #000308 0%, #003348 100%)
     color: #004A77
-    image: url('../projects/lishu/S9/bg.png')
+    // image: url('../projects/lishu/S9/bg.png')
     repeat: no-repeat
     position: center bottom
     size: 150% auto
   position: relative
   z-index: 1
+  .water
+    position: absolute
+    left: 0vw
+    bottom: 0vw
+    width: 100vw
+    z-index: -1
+    opacity: .6
 
   .decor-6
     width: 35vw
@@ -149,6 +159,8 @@ $c: #fff
     .label, .desc
       font:
        size: calc(12 * 100vw / 375)
+  .house-info .water
+    width: 200vw
 
 /* 平板尺寸 */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)

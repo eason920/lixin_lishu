@@ -23,6 +23,7 @@
           <img src="./all/subtitle.png" />
         </div>
       </div>
+      <img class="diamond" src="./S2/diamond.png" />
     </section>
   </div>
 </template>
@@ -39,13 +40,15 @@
     min-height: calc(100vw * 900 / 1920)
     max-height: calc(100vw * 1080 / 1920)
     background:
-      image: url(./S2/bg_pc.png)
+      // image: url(./S2/bg_pc.png)
       size: contain
       color: #004A77
   .is_pc
     position: absolute
     left: 12vw
-    top: 19vw
+    // top: 19vw
+    top: calc(50% - 8.5vw)
+    z-index: 3
     .logo
       width: 40vw
       img
@@ -58,12 +61,14 @@
 @media screen and (max-width: $bp-mb)
   #sec2
     background:
-      image: url(./S2/bg_mb.png)
+      // image: url(./S2/bg_mb.png)
       size: cover
       color: #004A77
       position: center
   .is_mb
-    height: 50vh
+    position: relative
+    height: 55vh
+    z-index: 3
     & > div
       position: absolute
       z-index: 1
@@ -72,40 +77,76 @@
     .logo
       width: 75vw
       left: 5vw
-      top: 38vw
+      top: 34vw
     .subtitle
       width: 88vw
       left: 6vw
-      bottom: 8vw
+      bottom: 3vw
 
 // ====================================
 // == ball
 // ====================================
+.diamond
+  position: absolute
+  width: 18vw
+  right: 18vw
+  top: calc(50% - 12vw)
+  z-index: 2
+.water
+  position: fixed
+  left: 0vw
+  top: calc(50% - 11vw)
+  width:100vw
 .ball
   position: absolute
-  z-index: 1
+  z-index: 2
 .box
+  position: absolute
+  width: 100%
+  height: 100%
   &::after,&::before
+    position: absolute
     content: ""
     display: block
+    height: 100%
+  &::after
+    left: 0
+    width: 40%
+    background: linear-gradient(to right,  #004A77FF 0%, #004A7700 100%)
+    z-index: 2
+    transform: skewX(-15deg)
+    transform-origin: 0 0
+  &::before
+    right:0
+    width: 70%
+    background: radial-gradient(100% 100% at 120% 30%, #004A77FF 30%,  #004A7700 90%)
+    z-index: 2
+    // transform: skewX(20deg)
+    // transform-origin: 0 0
     
+
 @media screen and (min-width: $bp-pc)
-  .water
-    position: absolute
-    left: 8.5vw
-    top: 31vw
   .ball
     &.is1
       width: 45px
       height: 45px
       left: 8.5vw
-      top: 31vw
+      top: calc(50% + 3.8vw)
     &.is2
       width: 47px
       height: 47px
       left: 38vw
       top: 20vw
+      top: calc(50% - 8.5vw)
 @media screen and (max-width: $bp-mb)
+  .diamond
+    width: 41.5vw
+    right: -6vw
+    top: 13.5vw
+  .water
+    top: 35vw
+    width:120vw
+    
   .ball
     &.is1
       width: 25px
