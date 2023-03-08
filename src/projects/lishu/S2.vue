@@ -1,6 +1,8 @@
 <template>
   <div class="relative">
     <section id="sec2">
+      <water class="water" />
+      <div class="box"></div>
       <ball class="ball is1" />
       <ball2 class="ball is2" />
       <!-- PC -->
@@ -82,7 +84,16 @@
 .ball
   position: absolute
   z-index: 1
+.box
+  &::after,&::before
+    content: ""
+    display: block
+    
 @media screen and (min-width: $bp-pc)
+  .water
+    position: absolute
+    left: 8.5vw
+    top: 31vw
   .ball
     &.is1
       width: 45px
@@ -113,11 +124,13 @@
 // @ is an alias to /src
 import { isMobile, isTablet } from '@/utils'
 import $ from 'jquery'
+import water from './water.vue'
 import ball from './ball.vue'
 import ball2 from './ball2.vue'
 export default {
   name: 'section1',
   components: {
+    water,
     ball,
     ball2,
   },

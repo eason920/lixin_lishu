@@ -17,9 +17,9 @@
       <img class="is_mb" src="../projects/lishu/all/sbg_mb.png" />
       <img class="is_pc" src="../projects/lishu/all/sbg_pc.png" />
     </div>
-    <vue-lazy-component class="section" id="section1" style="" @init="init">
+   <!-- <vue-lazy-component class="section" id="section1" style="" @init="init">
       <S1 />
-    </vue-lazy-component>
+    </vue-lazy-component>  -->
     <vue-lazy-component class="section" id="section2" @init="init">
       <S2 />
     </vue-lazy-component>
@@ -64,7 +64,7 @@ import Loading from '@/components/Loading.vue'
 // import Indigator from '@/components/Indigator.vue'
 // import SwiperDemo from '@/projects/lishu/swiperDemo_S7_single.vue'
 import MClose from '@/projects/lishu/MClose.vue'
-import S1 from '@/projects/lishu/S1.vue'
+// import S1 from '@/projects/lishu/S1.vue'
 import S2 from '@/projects/lishu/S2.vue'
 import S3 from '@/projects/lishu/S3.vue'
 import S4 from '@/projects/lishu/S4.vue'
@@ -85,7 +85,7 @@ export default {
     MobileNav,
     // SwiperDemo,
     MClose,
-    S1,
+    // S1,
     S2,
     S3,
     S4,
