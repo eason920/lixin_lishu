@@ -103,7 +103,7 @@
       bottom: 14vw
   .water
     left: -30vw
-    top: 100vw
+    top: 10vw
     width:200vw
     opacity: .5
 </style>

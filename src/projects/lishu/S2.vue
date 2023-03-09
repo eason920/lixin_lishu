@@ -47,10 +47,10 @@
     position: absolute
     left: 12vw
     // top: 19vw
-    top: calc(50% - 8.5vw)
+    top: calc(50% - 7.5vw)
     z-index: 3
     .logo
-      width: 40vw
+      width: 35vw
       img
         width: 100%
     .subtitle
@@ -75,22 +75,22 @@
     img
       width: 100%
     .logo
-      width: 75vw
-      left: 5vw
-      top: 34vw
+      width: 64vw
+      left: 8vw
+      top: 37vw
     .subtitle
-      width: 88vw
-      left: 6vw
-      bottom: 3vw
+      width: 81vw
+      left: 10vw
+      bottom: 5vw
 
 // ====================================
 // == ball
 // ====================================
 .diamond
   position: absolute
-  width: 18vw
+  width: 16vw
   right: 18vw
-  top: calc(50% - 12vw)
+  top: calc(50% - 11vw)
   z-index: 2
 .water
   position: fixed
@@ -140,9 +140,9 @@
       top: calc(50% - 8.5vw)
 @media screen and (max-width: $bp-mb)
   .diamond
-    width: 41.5vw
-    right: -6vw
-    top: 13.5vw
+    width: 27vw
+    right: 8vw
+    top: 25vw
   .water
     top: 35vw
     width:120vw
@@ -151,13 +151,13 @@
     &.is1
       width: 25px
       height: 25px
-      left: 3vw
+      left: 8vw
       top: 60vw
     &.is2
       width: 25px
       height: 25px
-      left: 52vw
-      top: 24vw
+      left: 42vw
+      top: 25vw
 
 </style>
 
