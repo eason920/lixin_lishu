@@ -3,7 +3,7 @@ export default {
   googleSrc:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.860116344592!2d121.5137316!3d25.106596099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442af2e4e8b596f%3A0xa772f523c4d7d396!2z5a6P5pmu6Zm95piOIOaOpeW-heS4reW_gw!5e0!3m2!1szh-TW!2stw!4v1673401019134!5m2!1szh-TW!2stw',
   googleLink: 'https://goo.gl/maps/5Cm26YoJwPq6fepN9',
-  phone: '02-8292-2333',
+  phone: '02-2988-8989',
   fbLink: 'https://www.facebook.com/100348069444420',
   fbMessage: 'https://m.me/100348069444420',
   caseName: '萊茵水花園',
