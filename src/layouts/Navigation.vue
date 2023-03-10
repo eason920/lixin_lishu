@@ -113,7 +113,7 @@ export default {
   top: 0
   left: 0
   display: flex
-  z-index: 9999
+  z-index: 10
   width: 100%
   align-items: center
   justify-content: space-between

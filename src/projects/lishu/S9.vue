@@ -56,6 +56,13 @@
   transform: translateX(-50%)
 .aos
   width: 100%
+
+  
+.water
+  position: absolute
+  left: 0vw
+  bottom: -3vw
+  width: 100vw
  
 @media screen and (min-width: $bp-pc)
   #sec9
@@ -102,10 +109,10 @@
       right: 4vw
       bottom: 14vw
   .water
-    left: -30vw
-    top: 10vw
-    width:200vw
-    opacity: .5
+    left: -80vw
+    width:250vw   
+    bottom: 5vw
+    opacity: .7
 </style>
 
 <script>

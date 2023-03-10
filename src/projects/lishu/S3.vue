@@ -264,7 +264,7 @@ export default {
 
 @media screen and (max-width: $bp-mb)
   #sec3
-    padding-top: 20vw
+    // padding-top: 20vw
   // h
   .swiper-container, // height
   .swiper-wrapper,

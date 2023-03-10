@@ -11,35 +11,23 @@
   margin-bottom: 0px;
   background: #302626;
   display: flex;
-  align-items: center;
   justify-content: center;
+  font-size: 12px;
+  position: relative;
 
   img {
-    width: 50px;
-    margin-right: 20px;
+    height:14px;
   }
-
-  p {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.6);
-    margin-right: 15px;
-    margin-bottom: 0;
-  }
-
   a {
-    font-size: 12px;
+    margin:0 .8em;
     color: #fff;
     text-decoration: none;
+    display: flex;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .footer {
-    margin-bottom: 63px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
   .footer {
     margin-bottom: 63px;
   }

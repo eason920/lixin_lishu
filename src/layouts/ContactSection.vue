@@ -15,11 +15,6 @@
 @media screen and (max-width: $bp-mb)
   #contact
     padding-top: 20px
-    background:
-      image: url('../projects/lishu/S9/bg_mb.png')
-      size: contain
-      repeat: no-repeat
-      position: 0px 60vw
 </style>
 
 <script>

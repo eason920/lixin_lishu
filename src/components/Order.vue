@@ -255,6 +255,7 @@ export default {
   .order-top {
     position: relative;
     overflow: hidden;
+    z-index: 3;
     .title-block{
      margin: 0 0 calc(100vw * 31 / 1920) 0;
     }
@@ -393,7 +394,7 @@ export default {
 /* 手機尺寸 */
 @media only screen and (max-width: 767px) {
   .order-bg {
-    background-image: $order_bg_image_m;
+  //  background-image: $order_bg_image_m;
     padding-top: 40px;
     margin: 0;
     position: relative;

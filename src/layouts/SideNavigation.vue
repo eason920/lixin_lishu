@@ -114,7 +114,7 @@ export default {
   height:70px;
   transition: all 0.5s;
   cursor: pointer;
-  z-index: 120;
+  z-index: 10;
   &.open {
   width: 180px;
   height:480px;
@@ -129,7 +129,7 @@ export default {
   width: 140px;
   height:auto;
   cursor: pointer;
-  z-index:140;
+  z-index:10;
   transition: all 0.5s;
 
   &.open {

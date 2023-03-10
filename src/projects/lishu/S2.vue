@@ -1,7 +1,12 @@
 <template>
   <div class="relative">
     <section id="sec2">
-      <water class="water" />
+      <div class="water_fixed">
+        <water class="water" />
+      </div>
+      <div class="water_mo" v-if="isMobile">
+        <water class="water" />
+      </div>
       <div class="box"></div>
       <ball class="ball is1" />
       <ball2 class="ball is2" />
@@ -67,7 +72,7 @@
       position: center
   .is_mb
     position: relative
-    height: 55vh
+    height: calc(100vw * 443 / 375)
     z-index: 3
     & > div
       position: absolute
@@ -81,7 +86,7 @@
     .subtitle
       width: 81vw
       left: 10vw
-      bottom: 5vw
+      bottom: 25vw
 
 // ====================================
 // == ball
@@ -92,8 +97,17 @@
   right: 18vw
   top: calc(50% - 11vw)
   z-index: 2
-.water
+.water_fixed
   position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100vh
+  min-height: calc(100vw * 900 / 1920)
+  max-height: calc(100vw * 1080 / 1920)
+
+.water
+  position: absolute
   left: 0vw
   top: calc(50% - 11vw)
   width:100vw
@@ -143,9 +157,25 @@
     width: 27vw
     right: 8vw
     top: 25vw
-  .water
-    top: 35vw
-    width:120vw
+  .water_fixed
+    min-height: calc(100vw * 667 / 375)
+    max-height: calc(100vw * 812 / 375)
+    .water
+      top: calc(50% - 40vw)
+      left: -30vw
+      width:200vw
+      transform: rotate(-35deg)
+      
+  .water_mo
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: calc(100vw * 443 / 375)
+    min-height: 0
+    max-height: calc(100vw * 812 / 375)
+    background: linear-gradient(to bottom,  #004A77FF 80%, #004A77BB 100%)
+
     
   .ball
     &.is1

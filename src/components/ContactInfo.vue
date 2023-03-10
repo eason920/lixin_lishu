@@ -145,7 +145,7 @@ export default {
   align-content: center;
   justify-content: space-between;
   position: relative;
-  z-index: 3;
+  // z-index: 3;
   width: 100%;
   // height: 480px;
   /* background-size: 100vw auto;
@@ -154,7 +154,7 @@ export default {
   transform: translateY(0);
   margin: 2vw auto 0;
   padding: 70px 0 60px;
-  overflow: hidden;
+  // overflow: hidden;
 
   .decor-5 {
     width: 22vw;
@@ -168,9 +168,9 @@ export default {
   }
   .water{
     position: absolute;
-    background:#003555;
+  // background:#003555;
     left: 0vw;
-    top:-2vw;
+    bottom:-2vw;
     z-index: -1;
     opacity: .6;
     width: 100%;
@@ -329,7 +329,7 @@ export default {
   .water{
     background:none;
     left:-20vw;
-    top:30vw;
+    top:-110vw;
     z-index: -1;
     transform: rotate(-30deg);
     width: 200%;
@@ -345,7 +345,7 @@ export default {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: calc(50% - 5em);
+      left: calc(50% - 7em);
       margin-right: 0;
       + span {
         margin-left: 1.5em;

@@ -12,11 +12,11 @@
     > -->
     <!-- <vue-lazy-component class="section" id="sectionDe" @init="init">
       <SwiperDemo />
-    </vue-lazy-component> -->
+    </vue-lazy-component>
     <div class="sbg">
       <img class="is_mb" src="../projects/lishu/all/sbg_mb.png" />
       <img class="is_pc" src="../projects/lishu/all/sbg_pc.png" />
-    </div>
+    </div> -->
    <!-- <vue-lazy-component class="section" id="section1" style="" @init="init">
       <S1 />
     </vue-lazy-component>  -->
