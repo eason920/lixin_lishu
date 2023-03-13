@@ -7,15 +7,15 @@
           <source src="https://h35.banner.tw/lishu/123.mp4">
         </video>
         <div class="logo_pc" data-aos-once="false" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1400">
-          <img src="./S1/logo_pc_left.png" />
+          <img loading="lazy" src="./S1/logo_pc_left.png" />
         </div>
         <div class="title">
           <div data-aos-once="false" data-aos="fade-up" data-aos-delay="0" data-aos-duration="2000">
-            <img class="title_img1" src="./all/subtitle.png" />
+            <img loading="lazy" class="title_img1" src="./all/subtitle.png" />
           </div>
           <div data-aos-once="false" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1800">
             <div class="title_box">
-              <img class="title_box_img2" src="./S1/appoint_pc.png" />
+              <img loading="lazy" class="title_box_img2" src="./S1/appoint_pc.png" />
             </div>
           </div>
         </div>
@@ -25,14 +25,14 @@
         <!-- <video autoplay loop muted>
           <source src="https://h35.banner.tw/lishu/123.mp4">
         </video> -->
-        <img class="demo" src="./S1/bg_mb.jpg" />
+        <img loading="lazy" class="demo" src="./S1/bg_mb.jpg" />
         <div class="logo_mb"
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="2000"
         >
-          <img src="./S1/logo_mb.png" />
+          <img loading="lazy" src="./S1/logo_mb.png" />
         </div>
       </div>
     </section>

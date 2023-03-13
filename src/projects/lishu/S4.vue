@@ -243,16 +243,16 @@ export default {
   .swiper-slide
     background-repeat: no-repeat
     &:nth-child(1), &:nth-child(5), &:nth-child(9)
-      background-image: url('./S4/m1.png')
+      background-image: url('./S4/m1.jpg')
 
     &:nth-child(2), &:nth-child(6), &:nth-child(10)
-      background-image: url('./S4/m2.png')
+      background-image: url('./S4/m2.jpg')
 
     &:nth-child(3), &:nth-child(7), &:nth-child(11)
-      background-image: url('./S4/m3.png')
+      background-image: url('./S4/m3.jpg')
 
     &:nth-child(4), &:nth-child(8), &:nth-child(12)
-      background-image: url('./S4/m4.png')
+      background-image: url('./S4/m4.jpg')
 
 // ====================================
 // == 架構

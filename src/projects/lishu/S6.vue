@@ -15,7 +15,7 @@
             <div class="msg">{{ item }}</div>
           </swiper-slide>
         </swiper>
-        <img v-else src="./S6/1.png" />
+        <img loading="lazy" v-else src="./S6/1.png" />
       </div>
       <div class="text">
         <h2
@@ -32,7 +32,7 @@
         >一棟好的建築，需要在美學的格調上做到昇華改變，<br/>
         一棟好的住居，需要在空間的意識上達到泰然優雅，<br/>
         一個好的未來，需要在生活的精神上感到奢華榮耀，<br/>
-        「茂德機構」以國際級的創作高標，在大都會公園水岸第一排，交會出建築未來新局，用心斟酌水岸天際方寸之間的細節，讓山川水綠風景，成為每一個窗景的完美主角！</p>
+        茂德以國際級的創作高標，在大都會公園水岸第一排，交會出建築未來新局，用心斟酌水岸天際方寸之間的細節，讓山川水綠風景，成為每一個窗景的完美主角！</p>
         <!-- 2 -->
         <h2
           data-aos-once="false"
@@ -237,13 +237,13 @@ export default {
   .swiper-slide
     background-repeat: no-repeat
     &:nth-child(1), &:nth-child(4), &:nth-child(7)
-      background-image: url('./S6/m1.png')
+      background-image: url('./S6/m1.jpg')
 
     &:nth-child(2), &:nth-child(5), &:nth-child(8)
-      background-image: url('./S6/m2.png')
+      background-image: url('./S6/m2.jpg')
 
     &:nth-child(3), &:nth-child(6), &:nth-child(9)
-      background-image: url('./S6/m3.png')
+      background-image: url('./S6/m3.jpg')
 
 // ====================================
 // == 架構

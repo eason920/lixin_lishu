@@ -13,22 +13,22 @@
       <!-- PC -->
       <div class="is_pc" v-if="!isMobile">
         <div class="logo" data-aos-once="false" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1400">
-          <img src="./S2/logo_right.png" />
+          <img loading="lazy" src="./S2/logo_right.png" />
         </div>
         <div data-aos-once="false" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1400">
-          <img class="subtitle" src="./all/subtitle.png" />
+          <img loading="lazy" class="subtitle" src="./all/subtitle.png" />
         </div>
       </div>
       <!-- MB -->
       <div class="is_mb" v-else>
         <div class="logo" data-aos-once="false" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1400">
-          <img src="./S2/logo_right.png" />
+          <img loading="lazy" src="./S2/logo_right.png" />
         </div>
         <div class="subtitle" data-aos-once="false" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1400">
-          <img src="./all/subtitle.png" />
+          <img loading="lazy" src="./all/subtitle.png" />
         </div>
       </div>
-      <img class="diamond" src="./S2/diamond.png" />
+      <img loading="lazy" class="diamond" src="./S2/diamond.png" />
     </section>
   </div>
 </template>

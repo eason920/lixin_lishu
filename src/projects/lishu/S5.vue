@@ -15,7 +15,7 @@
             <div class="msg">{{ item }}</div>
           </swiper-slide>
         </swiper>
-        <img v-else src="./S5/1.png" />
+        <img loading="lazy" v-else src="./S5/1.png" />
       </div>
       <div class="text">
         <h2
@@ -234,13 +234,13 @@ export default {
   .swiper-slide
     background-repeat: no-repeat
     &:nth-child(1), &:nth-child(4), &:nth-child(7)
-      background-image: url('./S5/m1.png')
+      background-image: url('./S5/m1.jpg')
 
     &:nth-child(2), &:nth-child(5), &:nth-child(8)
-      background-image: url('./S5/m2.png')
+      background-image: url('./S5/m2.jpg')
 
     &:nth-child(3), &:nth-child(6), &:nth-child(9)
-      background-image: url('./S5/m3.png')
+      background-image: url('./S5/m3.jpg')
 
 // ====================================
 // == 架構

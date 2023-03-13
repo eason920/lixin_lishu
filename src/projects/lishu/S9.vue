@@ -9,7 +9,7 @@
           data-aos-delay="0"
           data-aos-duration="800"
         >
-          <img src="./S9/logo.png" />
+          <img loading="lazy" src="./S9/logo.png" />
         </div>
       </div>
       <div class="subtitle">
@@ -19,7 +19,7 @@
           data-aos-delay="0"
           data-aos-duration="800"
         >
-          <img src="./S9/subtitle.png" />
+          <img loading="lazy" src="./S9/subtitle.png" />
         </div>
       </div>
       <ball class="ball is1" />

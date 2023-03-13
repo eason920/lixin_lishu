@@ -38,9 +38,9 @@
     <vue-lazy-component class="section" id="section7" @init="init">
       <S7 />
     </vue-lazy-component>
-    <vue-lazy-component class="section" id="section8" @init="init">
+    <!--vue-lazy-component class="section" id="section8" @init="init">
       <S8 />
-    </vue-lazy-component>
+    </vue-lazy-component-->
     <vue-lazy-component class="section" id="section9" @init="init">
       <S9 />
     </vue-lazy-component>
@@ -71,7 +71,7 @@ import S4 from '@/projects/lishu/S4.vue'
 import S5 from '@/projects/lishu/S5.vue'
 import S6 from '@/projects/lishu/S6.vue'
 import S7 from '@/projects/lishu/S7.vue'
-import S8 from '@/projects/lishu/S8.vue'
+//import S8 from '@/projects/lishu/S8.vue'
 import S9 from '@/projects/lishu/S9.vue'
 
 export default {
@@ -92,7 +92,7 @@ export default {
     S5,
     S6,
     S7,
-    S8,
+    //S8,
     S9
   },
 

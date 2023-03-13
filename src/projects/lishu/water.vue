@@ -1,28 +1,28 @@
 <template>
     <div class="water">
         <div class="anwater6">
-            <img src="./all/w3.png" />
-            <img src="./all/w3.png" />
+            <img loading="lazy" src="./all/w3.png" />
+            <img loading="lazy" src="./all/w3.png" />
         </div>
         <div class="anwater2">
-            <img src="./all/w4.png" />
-            <img src="./all/w4.png" />
+            <img loading="lazy" src="./all/w4.png" />
+            <img loading="lazy" src="./all/w4.png" />
         </div>
         <div class="anwater5">
-            <img src="./all/w4.png" />
-            <img src="./all/w4.png" />
+            <img loading="lazy" src="./all/w4.png" />
+            <img loading="lazy" src="./all/w4.png" />
         </div>
        <div class="anwater4">
-            <img src="./all/w1.png" />
-            <img src="./all/w1.png" />
+            <img loading="lazy" src="./all/w1.png" />
+            <img loading="lazy" src="./all/w1.png" />
         </div>
         <div class="anwater3">
-            <img src="./all/w3.png" />
-            <img src="./all/w3.png" />
+            <img loading="lazy" src="./all/w3.png" />
+            <img loading="lazy" src="./all/w3.png" />
         </div>
        <div class="anwater1">
-            <img src="./all/w1.png" />
-            <img src="./all/w1.png" />
+            <img loading="lazy" src="./all/w1.png" />
+            <img loading="lazy" src="./all/w1.png" />
         </div>
        <!--   --> 
     </div>
@@ -42,7 +42,7 @@
     left: 0
     width: 200%
     img
-      animation: aniWater 10s linear infinite 
+      animation: aniWater 16s linear infinite 
       width: 50%
       transform: translateX(-100%)
   .anwater1
@@ -54,31 +54,31 @@
     filter: blur(3px)
     opacity: .8
     img
-      animation-duration: 8s
+      animation-duration: 22s
   .anwater3
     transform: rotate(5deg) translateY(10%)
     opacity: .5
       filter: blur(1px)
     img
-      animation-duration: 12s
+      animation-duration: 25s
   .anwater4
     transform: rotate(-8deg) translateY(-42%)
     opacity: .5
     mix-blend-mode: screen
     img
-      animation-duration: 14s
+      animation-duration: 28s
   .anwater5
     transform: rotate(23deg) translateY(60%)
     opacity: .5
     mix-blend-mode: screen
     filter: blur(3px)
     img
-      animation-duration: 16s
+      animation-duration: 26s
   .anwater6
     transform: rotate(-11deg) translateY(-50%)
     opacity: .5
     filter: blur(2px)
     mix-blend-mode: screen
     img
-      animation-duration: 18s
+      animation-duration: 28s
 </style>
