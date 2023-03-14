@@ -32,7 +32,7 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >奢綠開闊的公園水岸，總是迷人！<br/>雙北唯一擁有綠地、水岸與雙捷運的特區，大都會公園宛如一筆畫境層層展開，利用水岸河堤打造多達100種遊樂設，成為健康自然的親子樂園，出門講究效率速度，回家追求景觀樂活，讓新世代的美好三重，由此出發！</p>
+        >奢綠開闊的公園水岸，總是迷人！<br/>雙北唯一擁有綠地、水岸與雙捷運的特區，大都會公園宛如一筆畫境層層展開，利用水岸河堤打造多達100種遊樂設施，成為健康自然的親子樂園，出門講究效率速度，回家追求景觀樂活，讓新世代的美好三重，由此出發！</p>
         <!-- 2 -->
         <h2
           data-aos-once="false"
@@ -235,7 +235,7 @@ export default {
   .swiper-slide
     background-repeat: no-repeat
     &:nth-child(1), &:nth-child(3), &:nth-child(5)
-      background-image: url('./S4/1.jpg')
+      background-image: url('./S4/1.png')
 
     &:nth-child(2), &:nth-child(4), &:nth-child(6)
       background-image: url('./S4/2.jpg')

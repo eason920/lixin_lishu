@@ -60,7 +60,7 @@
         width: 100%
     .subtitle
       width: 37vw
-      margin-left: 1.7vw
+      margin-left: 1vw
       display: flex
 
 @media screen and (max-width: $bp-mb)
