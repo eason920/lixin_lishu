@@ -14,6 +14,7 @@
   justify-content: center;
   font-size: 12px;
   position: relative;
+  display: none;
 
   img {
     height:14px;
