@@ -20,7 +20,7 @@
           </swiper-slide>
         </swiper>
       </div>
-      <div class="text">
+      <div class="text" v-if="!isMobile">
         <h2
           data-aos-once="false"
           data-aos="fade-up"
@@ -39,13 +39,44 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >總統套房級饗宴 超高坪效 機能至上</h2>
+        >水岸第一排 公園第一景</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >超機能2-3房空間，戶戶面寬3米客餐廳，大面積精準開窗，0遮蔽水岸端景視野，水岸第一排包廂，一如星級飯店總統套房饗宴，輕鬆享有超高CP值的新貴族輕奢華住居。</p>
+        >
+        大面積開窗，迎向水岸公園第一排景觀包廂，0遮蔽水岸端景視野，從格局配置到採光通風，型塑精緻美型空間一如星級飯店總統套房饗宴，景觀頭等艙、户戶親河力的新貴族輕奢華住居。
+
+</p>
+      </div>
+      <div class="text" v-else>
+        <h2
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >用世界的語言 歡迎未來三重人</h2>
+        <p
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >一如全球奢尚高端的星級酒店，華美的挑高大堂，極具現代感的造型沙發，透過親切熱忱的禮賓接待，感受飯店VIP的尊榮禮遇，交誼聽、宴會廳、健身房…穿透花園綠意，瑜珈教室、美式娛樂區、兒童遊戲室、親子書屋構築仕紳名媛質感的招待所氛圍，每一個端景都透著典雅，讓人舒心放鬆的氣息。</p>
+        <!-- 2 -->
+        <h2
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >水岸第一排 公園第一景</h2>
+        <p
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >公園水岸雙首排，高坪效1-3房空間，大面積開窗，迎向水岸公園第一排景觀包廂，<br>0遮蔽水岸端景視野，從格局配置到採光通風，型塑精緻美型空間<br>一如星級飯店總統套房饗宴，景觀頭等艙、户戶親河力的新貴族輕奢華住居。
+</p>
       </div>
       <ul class="dot8" v-if="!isMobile">
         <li

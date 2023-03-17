@@ -17,7 +17,39 @@
         </swiper>
         <img loading="lazy" v-else src="./S6/1.png" />
       </div>
-      <div class="text">
+      <div class="text" v-if="!isMobile">
+        <h2
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >國際級的創作 頂尖交會合演的新局</h2>
+        <p
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >一棟好的建築，需要在美學的格調上做到昇華改變，<br/>
+        一棟好的住居，需要在空間的意識上達到泰然優雅，<br/>
+        一個好的未來，需要在生活的精神上感到奢華榮耀，<br/>
+        茂德以國際級的創作高標，在大都會公園水岸第一排，交會出建築未來新局，用心斟酌水岸天際方寸之間的細節，讓山川水綠風景，成為每一個窗景的完美主角！</p>
+        <!-- 2 -->
+        <h2
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >新美齊物業 星級頂奢服務</h2>
+        <p
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >引進新美齊物業社區總體營造，透過一年52週的活動策畫，強化對社區的認同與情感，更在中秋節、聖誕節等，舉辦精彩的慶祝活動，加上對社區生活大小事的專業諮詢與問題排除，讓建築的價值，因生活的品質而歷久彌新，一代帶著下一代的賓至如歸，成為買得起的奢侈品！</p>
+      </div>
+
+
+      <div class="text" v-else>
         <h2
           data-aos-once="false"
           data-aos="fade-up"

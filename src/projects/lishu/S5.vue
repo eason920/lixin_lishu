@@ -17,7 +17,7 @@
         </swiper>
         <img loading="lazy" v-else src="./S5/1.png" />
       </div>
-      <div class="text">
+      <div class="text" v-if="!isMobile">
         <h2
           data-aos-once="false"
           data-aos="fade-up"
@@ -42,7 +42,36 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >右岸「TOD都市發展計劃」，兒童遊戲場綠地連接大都會公園，活化區域促進就業及商機，改變地貌創造優質環境；左岸「新北第二行政中心」新市政特區、東森媒體園區、三重City Link商場…複製信義計畫、新板特區，全面領航三重大未來！</p>
+        >未來三重水岸新區重大建設以「TOD都市發展計劃」為首，將活化區域改變地貌創造優質環境；三重果菜市場都更案的「綠藝之丘」以綠色藝術文化都心的定位，創作三重的六本木之丘未來願景；加上新北市第一座City Link商場、以及「新北第二行政中心」新市政特區、東森媒體園區…複製信義計畫、新板特區，全面領航三重大未來！</p>
+      </div>
+
+
+      <div class="text" v-else>
+        <h2
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >捷運新世代 移居第一站</h2>
+        <p
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >Y19b站環狀線北段已開工增值在線，A2a站步行3分鐘位二重公園旁，為討論中預計規劃增設的機捷站，10分鐘快速通往國門軌道經濟圈；台64線、新北環快、七大聯外橋樑縱橫雙北，與新莊副都心及新板特區跨界近享，豐收都會美好生活的時間魔法地圖，穩坐新北第一圈最新最優質的水岸新都心。</p>
+        <!-- 2 -->
+        <h2
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >新北第一圈 未來三重天際 必要一席之地</h2>
+        <p
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >未來三重水岸新區重大建設以「TOD都市發展計劃」為首，將活化區域改變地貌創造優質環境；三重果菜市場都更案的「綠藝之丘」以綠色藝術文化都心的定位，創作三重的六本木之丘未來願景；加上新北市第一座City Link商場、以及「新北第二行政中心」新市政特區、東森媒體園區…複製信義計畫、新板特區，全面領航三重大未來！</p>
       </div>
     </section>
   </div>
