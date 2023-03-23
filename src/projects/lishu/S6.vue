@@ -164,8 +164,7 @@ export default {
         "CN Flower作品",
         "CN Flower作品",
         "新美齊物業",
-        "物業情境示意圖",
-        "物業情境示意圖2"
+        "物業情境示意圖"
         // some
       ],
       vm: this,
@@ -328,18 +327,16 @@ export default {
 @media screen and (max-width: $bp-mb)
   .swiper-slide
     background-repeat: no-repeat
-    &:nth-child(1), &:nth-child(6), &:nth-child(11)
+    &:nth-child(1), &:nth-child(5), &:nth-child(9)
       background-image: url('./S6/m1.jpg')
 
-    &:nth-child(2), &:nth-child(7), &:nth-child(12)
+    &:nth-child(2), &:nth-child(6), &:nth-child(10)
       background-image: url('./S6/m2.jpg')
 
-    &:nth-child(3), &:nth-child(8), &:nth-child(13)
-      background-image: url('./S6/m3.jpg')
-
-    &:nth-child(4), &:nth-child(9), &:nth-child(14)
+    &:nth-child(3), &:nth-child(7), &:nth-child(11)
       background-image: url('./S6/m4.jpg')
-    &:nth-child(5), &:nth-child(10), &:nth-child(15)
+
+    &:nth-child(4), &:nth-child(8), &:nth-child(12)
       background-image: url('./S6/m5.jpg')
 
 // ====================================
