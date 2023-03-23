@@ -1,7 +1,8 @@
 <template>
   <div class="relative sec6">
     <section id="sec6">
-      <div class="box"
+      <div
+        class="box"
         data-aos-once="false"
         data-aos="fade-up"
         data-aos-delay="0"
@@ -16,8 +17,7 @@
           </swiper-slide>
         </swiper>
         <swiper v-else :options="swiperOption" ref="swiper6">
-          <swiper-slide v-for="item in 2" :key="'s6' + item">
-          </swiper-slide>
+          <swiper-slide v-for="item in 2" :key="'s6' + item"> </swiper-slide>
         </swiper>
       </div>
       <div class="text" v-if="!isMobile">
@@ -26,46 +26,56 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >國際級的創作 頂尖交會合演的新局</h2>
+        >
+          國際級的創作 頂尖交會合演的新局test
+        </h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >一棟好的建築，需要在美學的格調上做到昇華改變，<br>
-        一棟好的住居，需要在空間的意識上達到泰然優雅，<br>
-        一個好的未來，需要在生活的精神上感到奢華榮耀，<br>
-        以國際級的創作高標，在大都會公園水岸第一排，交會出建築未來新局，用心斟酌水岸天際方寸之間的細節，讓山川水綠風景，成為每一個窗景的完美主角！</p>
+        >
+          一棟好的建築，需要在美學的格調上做到昇華改變，<br />
+          一棟好的住居，需要在空間的意識上達到泰然優雅，<br />
+          一個好的未來，需要在生活的精神上感到奢華榮耀，<br />
+          以國際級的創作高標，在大都會公園水岸第一排，交會出建築未來新局，用心斟酌水岸天際方寸之間的細節，讓山川水綠風景，成為每一個窗景的完美主角！
+        </p>
         <!-- 2 -->
         <h2
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >新美齊物業 星級頂奢服務</h2>
+        >
+          新美齊物業 星級頂奢服務
+        </h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >引進新美齊物業社區總體營造，透過52週的活動策畫，強化對社區的認同與情感，更在中秋節、聖誕節等，舉辦精彩的慶祝活動，加上對社區生活大小事的專業諮詢與問題排除，讓建築的價值，因生活的品質而歷久彌新，一代帶著下一代的賓至如歸，成為買得起的奢侈品！</p>
-      
-      <h2
-          data-aos-once="false"
-          data-aos="fade-up"
-          data-aos-delay="0"
-          data-aos-duration="800"
-        >CN Flower 妝點生活美藝</h2>
-        <p
-          data-aos-once="false"
-          data-aos="fade-up"
-          data-aos-delay="0"
-          data-aos-duration="800"
-        >國際花藝大師凌宗湧的「CN Flower」團隊，深受兩岸政商名流、諸多五星級酒店、及精品品牌指定合作，「萊茵水花園」公共空間之端景，讓花藝綻放空間與人美感互動。</p>
-      
-      
-      </div>
+        >
+          引進新美齊物業社區總體營造，透過52週的活動策畫，強化對社區的認同與情感，更在中秋節、聖誕節等，舉辦精彩的慶祝活動，加上對社區生活大小事的專業諮詢與問題排除，讓建築的價值，因生活的品質而歷久彌新，一代帶著下一代的賓至如歸，成為買得起的奢侈品！
+        </p>
 
+        <h2
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >
+          CN Flower 妝點生活美藝
+        </h2>
+        <p
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >
+          國際花藝大師凌宗湧的「CN
+          Flower」團隊，深受兩岸政商名流、諸多五星級酒店、及精品品牌指定合作，「萊茵水花園」公共空間之端景，讓花藝綻放空間與人美感互動。
+        </p>
+      </div>
 
       <div class="text" v-else>
         <h2
@@ -73,59 +83,69 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >國際級的創作 頂尖交會合演的新局</h2>
+        >
+          國際級的創作 頂尖交會合演的新局
+        </h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >一棟好的建築，需要在美學的格調上做到昇華改變，<br>
-         一棟好的住居，需要在空間的意識上達到泰然優雅，<br>
-         一個好的未來，需要在生活的精神上感到奢華榮耀，<br>
-         以國際級的創作高標，在大都會公園水岸第一排，交會出建築未來新局，用心斟酌水岸天際方寸之間的細節，讓山川水綠風景，成為每一個窗景的完美主角！
-         </p>
+        >
+          一棟好的建築，需要在美學的格調上做到昇華改變，<br />
+          一棟好的住居，需要在空間的意識上達到泰然優雅，<br />
+          一個好的未來，需要在生活的精神上感到奢華榮耀，<br />
+          以國際級的創作高標，在大都會公園水岸第一排，交會出建築未來新局，用心斟酌水岸天際方寸之間的細節，讓山川水綠風景，成為每一個窗景的完美主角！
+        </p>
         <!-- 2 -->
         <h2
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >新美齊物業 星級頂奢服務</h2>
+        >
+          新美齊物業 星級頂奢服務
+        </h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >引進新美齊物業社區總體營造，透過52週的活動策畫，強化對社區的認同與情感，更在中秋節、聖誕節等，舉辦精彩的慶祝活動，加上對社區生活大小事的專業諮詢與問題排除，讓建築的價值，因生活的品質而歷久彌新，一代帶著下一代的賓至如歸，成為買得起的奢侈品！</p>
-      <h2
+        >
+          引進新美齊物業社區總體營造，透過52週的活動策畫，強化對社區的認同與情感，更在中秋節、聖誕節等，舉辦精彩的慶祝活動，加上對社區生活大小事的專業諮詢與問題排除，讓建築的價值，因生活的品質而歷久彌新，一代帶著下一代的賓至如歸，成為買得起的奢侈品！
+        </p>
+        <h2
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >CN Flower 妝點生活美藝</h2>
+        >
+          CN Flower 妝點生活美藝
+        </h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >國際花藝大師凌宗湧的「CN Flower」團隊，深受兩岸政商名流、諸多五星級酒店、及精品品牌指定合作，「萊茵水花園」公共空間之端景，讓花藝綻放空間與人美感互動。</p>
-      
-      
+        >
+          國際花藝大師凌宗湧的「CN
+          Flower」團隊，深受兩岸政商名流、諸多五星級酒店、及精品品牌指定合作，「萊茵水花園」公共空間之端景，讓花藝綻放空間與人美感互動。
+        </p>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import $ from 'jquery'
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-import 'swiper/css/swiper.css'
+import $ from "jquery";
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import "swiper/css/swiper.css";
 
-import { isMobile, isTablet } from '@/utils'
+import { isMobile, isTablet } from "@/utils";
 
 export default {
-  name: 'swiper-example-thumbs-gallery',
-  title: 's4',
+  name: "swiper-example-thumbs-gallery",
+  title: "s4",
   components: {
     Swiper,
     SwiperSlide
@@ -134,10 +154,10 @@ export default {
   data() {
     return {
       list: [
-        'CN Flower作品',
-        'CN Flower作品',
-        '新美齊物業',
-        '物業情境示意圖',
+        "CN Flower作品",
+        "CN Flower作品",
+        "新美齊物業",
+        "物業情境示意圖"
         // some
       ],
       vm: this,
@@ -161,43 +181,43 @@ export default {
         speed: 800,
         on: {
           slideChangeTransitionStart: function() {
-            let eq = this.activeIndex
+            let eq = this.activeIndex;
             if (!isMobile) {
               if (eq >= 2) {
-                eq = eq - 2
+                eq = eq - 2;
               }
-              $('.dot4 li')
-                .removeClass('active')
+              $(".dot4 li")
+                .removeClass("active")
                 .eq(eq)
-                .addClass('active')
+                .addClass("active");
             } else {
               if (eq >= 4) {
-                eq = eq - 4
+                eq = eq - 4;
               }
-              $('.dot4 li')
-                .removeClass('active')
+              $(".dot4 li")
+                .removeClass("active")
                 .eq(eq)
-                .addClass('active')
+                .addClass("active");
             }
           }
         }
       }
-    }
+    };
   },
 
   methods: {
     prevBtn() {
-      this.$refs.swiper4.$swiper.slidePrev()
+      this.$refs.swiper4.$swiper.slidePrev();
     },
     nextBtn() {
-      this.$refs.swiper4.$swiper.slideNext()
+      this.$refs.swiper4.$swiper.slideNext();
     },
     fnDotChange(i) {
-      let eq = i - 1
+      let eq = i - 1;
       if (eq >= 2) {
-        eq = eq - 2
+        eq = eq - 2;
       }
-      this.$refs.swiper4.$swiper.slideTo(eq)
+      this.$refs.swiper4.$swiper.slideTo(eq);
     }
   },
 
@@ -206,7 +226,7 @@ export default {
   mounted() {},
 
   computed: {}
-}
+};
 </script>
 
 <style lang="sass" scoped>
@@ -310,7 +330,7 @@ export default {
       background-image: url('./S6/m4.jpg')
 
     &:nth-child(4), &:nth-child(8), &:nth-child(12)
-      background-image: url('./S6/m5.jpg')  
+      background-image: url('./S6/m5.jpg')
 
 // ====================================
 // == 架構
