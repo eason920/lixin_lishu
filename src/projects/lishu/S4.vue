@@ -21,6 +21,14 @@
         </swiper>
       </div>
       <div class="text">
+        <h1
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="800"
+        >大都會水岸特區</h1>
+        <br>
+
         <h2
           data-aos-once="false"
           data-aos="fade-up"
@@ -32,20 +40,22 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >奢綠開闊的公園水岸，總是迷人！<br/>雙北唯一擁有綠地、水岸與雙捷運的特區，大都會公園宛如一筆畫境層層展開，利用水岸河堤打造多達100種遊樂設施，成為健康自然的親子樂園，出門講究效率速度，回家追求景觀樂活，讓新世代的美好三重，由此出發！</p>
+        >奢綠開闊的公園水岸，總是迷人！<br>雙北唯一擁有綠地、水岸與雙捷運的特區，「大都會水岸特區」公園，宛如一筆畫境層層展開，水岸，河堤打造多達100種遊樂設施，成為健康自然的親子樂園，出門講究效率速度，回家追求景觀樂活，讓新世代的美好三重，由此出發！
+        </p>
         <!-- 2 -->
         <h2
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >水岸新三重 景觀第一排</h2>
+        >臺北雙星領銜 新北三大核心共榮<br>關鍵地位輕取大未來</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >兩站之距 台北雙星北車特區<br/>西區門戶計畫翻轉台北東西軸線，「台北雙星｣國家門戶續寫台灣未來經濟奇蹟，在繁華便捷與自然樂活之間，仰望未來台北最美的城市天際線，迎風隨享十六座大安森林公園的親水闊綠，享受一種健康又樂活的自由新生活！</p>
+        >「大都會水岸特區」環擁雙北國家級重磅建設，東以一橋之距與臺北雙星特區共好共榮，跨步南向新北第二行政中心，打造三重新市政特區，串聯西側新北產業園區以及新莊副都心，繁華隨享，連通北面銀河灣計畫，水岸觀光娛樂醫療新未來，黃金四角正核心的關鍵位置，最好的願景都站在這裡！
+</p>
         <ul class="dot4" v-if="!isMobile">
         <li
           v-for="item in 2"
@@ -195,9 +205,17 @@ export default {
       &:nth-child(1), &:nth-child(2)
         // margin-top: 5vw
       &:nth-child(5), &:nth-child(6)
-        margin-bottom: 5vw
+        //margin-bottom: 5vw
+    h1
+       text-align: left
+       font:
+        size: 1.63em
+        line-height:1.4
+        margin-bottom: .5vw
+        weight: 500
+
     h2
-      text-align: right
+      text-align: left
       font:
         size: 1.63em
       line-height:1.4
@@ -211,8 +229,12 @@ export default {
 @media screen and (max-width: $bp-mb)
   .text
     margin-top: 7vw
+    h1
+      font:
+        size: 1.63em
     h2
       line-height: 1.5
+      size: 1.63em
     p
       font-size: 3.2vw
       margin: 4vw 0 10vw

@@ -34,7 +34,8 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
-        >建築經典 才是永恆的時尚</h2>
+        >水岸新三重 景觀第一排<br>
+          建築經典 才是永恆的時尚</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
