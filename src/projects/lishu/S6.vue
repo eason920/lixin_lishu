@@ -27,7 +27,7 @@
           data-aos-delay="0"
           data-aos-duration="800"
         >
-          國際級的創作 頂尖交會合演的新局test
+          國際級的創作 頂尖交會合演的新局
         </h2>
         <p
           data-aos-once="false"
@@ -75,6 +75,13 @@
           國際花藝大師凌宗湧的「CN
           Flower」團隊，深受兩岸政商名流、諸多五星級酒店、及精品品牌指定合作，「萊茵水花園」公共空間之端景，讓花藝綻放空間與人美感互動。
         </p>
+        <ul class="dot6" v-if="!isMobile">
+          <li
+            v-for="item in 2"
+            :key="'dot6' + item"
+            @click="fnDotChange(item)"
+          ></li>
+        </ul>
       </div>
 
       <div class="text" v-else>
@@ -145,7 +152,7 @@ import { isMobile, isTablet } from "@/utils";
 
 export default {
   name: "swiper-example-thumbs-gallery",
-  title: "s4",
+  title: "s6",
   components: {
     Swiper,
     SwiperSlide
@@ -157,7 +164,8 @@ export default {
         "CN Flower作品",
         "CN Flower作品",
         "新美齊物業",
-        "物業情境示意圖"
+        "物業情境示意圖",
+        "物業情境示意圖2"
         // some
       ],
       vm: this,
@@ -186,15 +194,15 @@ export default {
               if (eq >= 2) {
                 eq = eq - 2;
               }
-              $(".dot4 li")
+              $(".dot6 li")
                 .removeClass("active")
                 .eq(eq)
                 .addClass("active");
             } else {
-              if (eq >= 4) {
-                eq = eq - 4;
+              if (eq >= 5) {
+                eq = eq - 5;
               }
-              $(".dot4 li")
+              $(".dot6 li")
                 .removeClass("active")
                 .eq(eq)
                 .addClass("active");
@@ -207,17 +215,17 @@ export default {
 
   methods: {
     prevBtn() {
-      this.$refs.swiper4.$swiper.slidePrev();
+      this.$refs.swiper6.$swiper.slidePrev();
     },
     nextBtn() {
-      this.$refs.swiper4.$swiper.slideNext();
+      this.$refs.swiper6.$swiper.slideNext();
     },
     fnDotChange(i) {
       let eq = i - 1;
       if (eq >= 2) {
         eq = eq - 2;
       }
-      this.$refs.swiper4.$swiper.slideTo(eq);
+      this.$refs.swiper6.$swiper.slideTo(eq);
     }
   },
 
@@ -310,26 +318,28 @@ export default {
   position: relative
 
 @media screen and (min-width: $bp-pc)
-  // .swiper-slide
-  //   background-repeat: no-repeat
-  //   &:nth-child(1), &:nth-child(3), &:nth-child(5)
-  //     background-image: url('./S4/1.jpg')
+  .swiper-slide
+    background-repeat: no-repeat
+    &:nth-child(1), &:nth-child(3), &:nth-child(5)
+      background-image: url('./S6/1.png')
 
-  //   &:nth-child(2), &:nth-child(4), &:nth-child(6)
-  //     background-image: url('./S4/2.jpg')
+    &:nth-child(2), &:nth-child(4), &:nth-child(6)
+      background-image: url('./S6/2.png')
 @media screen and (max-width: $bp-mb)
   .swiper-slide
     background-repeat: no-repeat
-    &:nth-child(1), &:nth-child(5), &:nth-child(9)
+    &:nth-child(1), &:nth-child(6), &:nth-child(11)
       background-image: url('./S6/m1.jpg')
 
-    &:nth-child(2), &:nth-child(6), &:nth-child(10)
+    &:nth-child(2), &:nth-child(7), &:nth-child(12)
       background-image: url('./S6/m2.jpg')
 
-    &:nth-child(3), &:nth-child(7), &:nth-child(11)
-      background-image: url('./S6/m4.jpg')
+    &:nth-child(3), &:nth-child(8), &:nth-child(13)
+      background-image: url('./S6/m3.jpg')
 
-    &:nth-child(4), &:nth-child(8), &:nth-child(12)
+    &:nth-child(4), &:nth-child(9), &:nth-child(14)
+      background-image: url('./S6/m4.jpg')
+    &:nth-child(5), &:nth-child(10), &:nth-child(15)
       background-image: url('./S6/m5.jpg')
 
 // ====================================
@@ -379,14 +389,14 @@ export default {
   z-index: 2
 @media screen and (min-width: $bp-pc)
   // h
-  // .swiper-container, // height
-  // .swiper-wrapper,
-  // .swiper-slide
-  //   height: 34.4vw // w * 0.562
+  .swiper-container, // height
+  .swiper-wrapper,
+  .swiper-slide
+    height: 34.4vw // w * 0.562
 
   // // w
-  // .swiper-container
-  //   width:  100%
+  .swiper-container
+    width:  100%
 
 @media screen and (max-width: $bp-mb)
   // h
@@ -462,6 +472,32 @@ export default {
 
   .nxt
     right: $lr
+
+// --------------------------------
+// dot
+$w: 10px
+@media screen and (min-width: $bp-pc)
+  .dot6
+    display: flex
+    height: 6px
+    margin:
+      top: 4vw
+      bottom: 0 !important
+    li
+      border: solid 1px #fff
+      width: 2vw
+      position: relative
+      cursor: pointer
+      margin-right: .5vw
+      &:last-child
+        margin: 0
+      &.active
+        cursor: default
+        background: #fff
+
+@media screen and (max-width: $bp-mb)
+  .dot6
+    display: none
 
 // ====================================
 // == msg
