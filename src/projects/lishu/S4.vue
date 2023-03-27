@@ -86,10 +86,10 @@ export default {
   data() {
     return {
       list: [
+        '大都會公園空拍',
         '辰光橋實景拍攝',
         '大都會公園實景拍攝',
         '機捷A2站實景拍攝',
-        '大都會公園空拍',
         // some
       ],
       vm: this,
