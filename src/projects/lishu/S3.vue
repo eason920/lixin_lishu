@@ -59,9 +59,9 @@ export default {
   data() {
     return {
       list: [
-        '巴黎塞納河左岸',
         '倫敦泰晤士河南岸',
         '紐約曼哈頓水岸',
+        '巴黎塞納河左岸',
         // some
       ],
       vm: this,

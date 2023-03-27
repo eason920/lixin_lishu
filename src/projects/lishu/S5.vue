@@ -97,7 +97,7 @@ export default {
       list: [
         'City Link商場示意圖',
         '新北環快實景拍攝',
-        '機捷A2a站實景拍攝',
+        '機捷A2站實景拍攝',
         // some
       ],
       vm: this,
