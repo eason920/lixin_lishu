@@ -177,7 +177,7 @@ export default {
             spaceBetween: 10
           },
           0: {
-            slidesPerView: 1.16,
+            //slidesPerView: 0,
             spaceBetween: 14
           }
         },
@@ -400,7 +400,7 @@ export default {
   .swiper-container, // height
   .swiper-wrapper,
   .swiper-slide
-    height: 42vw // w * 2.87
+    height: 56vw // w * 2.87
 
   // w
   .swiper-container
@@ -410,7 +410,7 @@ export default {
   .box
     position: relative
     & > div
-      padding-left: calc( (100vw - 83vw) / 2 + 14px)
+      //padding-left: calc( (100vw - 83vw) / 2 + 14px)
 
 // --------------------------------
 // PRE NEX
@@ -460,9 +460,9 @@ export default {
       top: 0
     &:before
       left: 0
-      background-image: linear-gradient(to right, rgba(0,74,119,.8), rgba(0,74,119,0))
+      //background-image: linear-gradient(to right, rgba(0,74,119,.8), rgba(0,74,119,0))
     &:after
-      background-image: linear-gradient(to left, rgba(0,74,119,.8), rgba(0,74,119,0))
+      //background-image: linear-gradient(to left, rgba(0,74,119,.8), rgba(0,74,119,0))
       right: 0
   .pre
     left: $lr
