@@ -8,6 +8,7 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >
           <img loading="lazy" src="./S9/logo.png" />
         </div>
@@ -18,6 +19,7 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >
           <img loading="lazy" src="./S9/subtitle.png" />
         </div>

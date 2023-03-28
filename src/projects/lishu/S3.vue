@@ -29,12 +29,14 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >國際都會的豐饒璀璨 總在水岸綻放</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >一座偉大的城市，總有一條潺潺流淌的水岸，在河畔風情與繁華喧囂之間，構築這座都會的輝煌盛世，與高質感生活模式；例如紐約曼哈頓水岸豪宅群、法國巴黎塞納河左岸特區開發計畫、英國倫敦泰晤士河南岸開發計畫等 都是全球頂尖富豪們追逐鍾愛的置產舞台。</p>
       </div>
     </section>

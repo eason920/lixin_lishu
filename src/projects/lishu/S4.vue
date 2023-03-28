@@ -26,6 +26,7 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >大都會水岸特區</h1>
         <br>
 
@@ -34,12 +35,14 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >對位大直水岸 越超大安森林</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >奢綠開闊的公園水岸，總是迷人！<br>雙北唯一擁有綠地、水岸與雙捷運的特區，「大都會水岸特區」公園，宛如一筆畫境層層展開，水岸，河堤打造多達100種遊樂設施，成為健康自然的親子樂園，出門講究效率速度，回家追求景觀樂活，讓新世代的美好三重，由此出發！
         </p>
         <!-- 2 -->
@@ -48,12 +51,14 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >臺北雙星領銜 新北三大核心共榮<br>關鍵地位輕取大未來</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >「大都會水岸特區」環擁雙北國家級重磅建設，東以一橋之距與臺北雙星特區共好共榮，跨步南向新北第二行政中心，打造三重新市政特區，串聯西側新北產業園區以及新莊副都心，繁華隨享，連通北面銀河灣計畫，水岸觀光娛樂醫療新未來，黃金四角正核心的關鍵位置，最好的願景都站在這裡！
 </p>
         <ul class="dot4" v-if="!isMobile">

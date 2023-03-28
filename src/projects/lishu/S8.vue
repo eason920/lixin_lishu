@@ -26,12 +26,14 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >用世界的語言 歡迎未來三重人</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >一如全球奢尚高端的星級酒店，華美的挑高大堂，極具現代感的造型沙發，透過親切熱忱的禮賓接待，感受飯店VIP的尊榮禮遇，交誼聽、宴會廳、健身房…穿透花園綠意，瑜珈教室、美式娛樂區、兒童遊戲室、親子書屋構築仕紳名媛質感的招待所氛圍，每一個端景都透著典雅，讓人舒心放鬆的氣息。</p>
         <!-- 2 -->
         <h2
@@ -39,12 +41,14 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >水岸第一排 公園第一景</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >
         公園水岸雙首排，高坪效1~3房空間，大面積開窗，迎向水岸公園第一排景觀包廂，0遮蔽水岸端景視野，從格局配置到採光通風，型塑精緻美型空間一如星級飯店總統套房饗宴，景觀頭等艙、户戶親河力的新貴族輕奢華住居。
 
@@ -57,12 +61,14 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >用世界的語言 歡迎未來三重人</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >一如全球奢尚高端的星級酒店，華美的挑高大堂，極具現代感的造型沙發，透過親切熱忱的禮賓接待，感受飯店VIP的尊榮禮遇，交誼聽、宴會廳、健身房…穿透花園綠意，瑜珈教室、美式娛樂區、兒童遊戲室、親子書屋構築仕紳名媛質感的招待所氛圍，每一個端景都透著典雅，讓人舒心放鬆的氣息。</p>
         <!-- 2 -->
         <h2
@@ -70,12 +76,14 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >水岸第一排 公園第一景</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >公園水岸雙首排，高坪效1-3房空間，大面積開窗，迎向水岸公園第一排景觀包廂，0遮蔽水岸端景視野，從格局配置到採光通風，型塑精緻美型空間一如星級飯店總統套房饗宴，景觀頭等艙、户戶親河力的新貴族輕奢華住居。
 
 </p>

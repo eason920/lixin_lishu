@@ -21,12 +21,14 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >景觀頭等艙 戶戶親河力</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >717坪三面臨路朗闊基地，大尺度面寬對坐水岸，感受自然與城市交織出的寧靜層次，排列組合成一種人們真正想要的的生活想像，藍帶、綠帶交會水岸城市的溫柔光陰，歡迎未來三重人，這個眼界，就是真正的頂尖！</p>
         <!-- 2 -->
         <h2
@@ -34,6 +36,7 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >水岸新三重 景觀第一排<br>
           建築經典 才是永恆的時尚</h2>
         <p
@@ -41,6 +44,7 @@
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="800"
+          data-aos-offset="-300"
         >建築應該訴說它的時代與場所，同時又嚮往著永恆，外觀快意簡筆的白色框架，將三重水岸輸入國際品味，與層層向上、彷若展翅的俐落線條美學，讓水岸飯店的質地，透過當代簡約風格融為一體，框聚新世代對未來生活的美好渴望。</p>
       </div>
       <ul class="dot7" v-if="!isMobile">
