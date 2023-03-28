@@ -236,16 +236,31 @@ export default {
     size: contain
   position: relative
 
-.swiper-slide
-  background-repeat: no-repeat
-  &:nth-child(1), &:nth-child(4), &:nth-child(7)
-    background-image: url('./S7/1.jpg')
 
-  &:nth-child(2), &:nth-child(5), &:nth-child(8)
-    background-image: url('./S7/2.jpg')
 
-  &:nth-child(3), &:nth-child(6), &:nth-child(9)
-    background-image: url('./S7/3.jpg')
+@media screen and (min-width: $bp-pc)  
+  .swiper-slide
+    background-repeat: no-repeat
+    &:nth-child(1), &:nth-child(4), &:nth-child(7)
+      background-image: url('./S7/3.jpg')
+
+    &:nth-child(2), &:nth-child(5), &:nth-child(8)
+      background-image: url('./S7/1.jpg')
+
+    &:nth-child(3), &:nth-child(6), &:nth-child(9)
+      background-image: url('./S7/2.jpg')
+
+@media screen and (max-width: $bp-mb)
+  .swiper-slide
+    background-repeat: no-repeat
+    &:nth-child(1), &:nth-child(4), &:nth-child(7)
+      background-image: url('./S7/1.jpg')
+
+    &:nth-child(2), &:nth-child(5), &:nth-child(8)
+      background-image: url('./S7/2.jpg')
+
+    &:nth-child(3), &:nth-child(6), &:nth-child(9)
+      background-image: url('./S7/3.jpg')
 
 // ====================================
 // == 架構
