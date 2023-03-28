@@ -161,10 +161,10 @@ export default {
   data() {
     return {
       list: [
+        "物業情境示意圖",
         "CN Flower作品",
         "CN Flower作品",
         "新美齊物業",
-        "物業情境示意圖"
         // some
       ],
       vm: this,

@@ -59,9 +59,9 @@ export default {
   data() {
     return {
       list: [
+        '巴黎塞納河左岸',
         '倫敦泰晤士河南岸',
         '紐約曼哈頓水岸',
-        '巴黎塞納河左岸',
         // some
       ],
       vm: this,
@@ -256,11 +256,11 @@ export default {
   .swiper-container, // height
   .swiper-wrapper,
   .swiper-slide
-    height: 30.37vw // w * 0.562
+    height: 34.37vw // w * 0.562
 
   // w
   .swiper-container
-    width:  60vw
+    width:  68vw
 
 @media screen and (max-width: $bp-mb)
   #sec3
@@ -350,7 +350,7 @@ $w: 10px
     height: 6px
     width: 10vw
     left: 50%
-    top: 35.5vw
+    top: 39.8vw
     transform: translateX(-50%)
     z-index: 9
     li

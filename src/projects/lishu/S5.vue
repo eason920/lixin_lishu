@@ -95,9 +95,9 @@ export default {
   data() {
     return {
       list: [
+        '機捷A2站實景拍攝',
         'City Link商場示意圖',
         '新北環快實景拍攝',
-        '機捷A2站實景拍攝',
         // some
       ],
       vm: this,

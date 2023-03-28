@@ -72,9 +72,9 @@ export default {
   data() {
     return {
       list: [
+        '大都會公園空拍',
         '辰光橋實景拍攝',
         '外觀合成示意圖',
-        '大都會公園空拍',
         // some
       ],
       vm: this,
@@ -145,7 +145,7 @@ export default {
 // ====================================
 .sec7
   background: #004A77BB
-  z-index:99
+  z-index:1
 .text
   width: 80vw
   margin: 0 auto
@@ -291,7 +291,7 @@ export default {
   .box
     position: relative
     & > div
-      //padding-left: calc( (100vw - 70vw) / 2 + 20px )
+      padding-left: calc( (100vw - 70vw) / 2 + 20px )
 
 @media screen and (max-width: $bp-mb)
   // h
