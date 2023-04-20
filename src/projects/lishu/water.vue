@@ -31,9 +31,9 @@
 <style lang="sass" scoped>
 @keyframes aniWater
   50%
-    transform: translateX(-50%)skewX(20deg)
+    //transform: translateX(-50%)skewX(20deg)
   to
-    transform: translateX(0)
+    //transform: translateX(0)
 .water
   position: relative
   .anwater1,.anwater2,.anwater3,.anwater4,.anwater5,.anwater6
